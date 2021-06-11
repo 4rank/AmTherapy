@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_ben_child"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_ben"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/main_view_ben_child"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        app:layoutDescription="@xml/ben_child_second_scene">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nsv_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints,ScrollViewCount,UselessParent"
+            tools:layout_editor_absoluteX="45dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints,UselessLeaf">
+
+                <TextView
+                    android:id="@+id/textView_benChild1"
+                    style="@style/MyTextStyle_title"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/text_main_ben_child"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.027" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <TextView
+                        android:id="@+id/textView_benChild3"
+                        android:layout_width="265dp"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.496"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.288"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/button_attention_benChild"
+                        style="@style/MyTextStyle_button_attention"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/attention_but_ben"
+                        android:text="@string/text_attention"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        tools:ignore="MissingConstraints" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_benChild5"
+                    style="@style/MyTextStyle_1"
+                    android:layout_width="254dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/text_vvod_ben"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.288"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView_benChild6"
+                    style="@style/MyTextStyle_1"
+                    android:layout_width="254dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/text_vvod_ben_gramm"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.288"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="169dp"
+                    tools:layout_editor_absoluteY="584dp" />
+
+                <EditText
+                    android:id="@+id/vVod_ben_child"
+                    android:layout_width="236dp"
+                    android:layout_height="45dp"
+                    android:autofillHints="no"
+                    android:background="@drawable/custom_et_ben"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.575"
+                    tools:ignore="LabelFor,MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView_benChild11"
+                    android:layout_width="350dp"
+                    android:layout_height="30dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="169dp"
+                    tools:layout_editor_absoluteY="584dp" />
+
+                <TextView
+                    android:id="@+id/textView_benChild2"
+                    style="@style/MyTextStyle_1"
+                    android:layout_width="254dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/BEN_child_text"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.288"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView_seekBar"
+                    style="@style/MyTextStyle_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/text_textSB"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="169dp"
+                    tools:layout_editor_absoluteY="584dp" />
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/custom_tv_ben"
+                    android:max="12"
+                    android:progress="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="169dp"
+                    tools:layout_editor_absoluteY="584dp" />
+
+                <TextView
+                    android:id="@+id/textView_benChild4"
+                    style="@style/MyTextStyle_1"
+                    android:layout_width="254dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/text_sex"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.288"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="169dp"
+                    tools:layout_editor_absoluteY="584dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupChild_sex"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_tv_ben"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_child_boy"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/text_boy"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_child_girl"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/text_girl"
+                        android:textSize="15dp" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="169dp"
+                    tools:layout_editor_absoluteY="584dp" />
+
+                <Button
+                    android:id="@+id/button_ben_child"
+                    style="@style/MyTextStyle_button_gem_else"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_but_ben"
+                    android:text="@string/text_button_ben_else"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.911"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="169dp"
+                    tools:layout_editor_absoluteY="584dp" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        style="@style/MyTextStyle_prep"
+        android:background="@color/ben4"
+        app:itemIconSize="25dp"
+        app:itemIconTint="@color/bnv_color"
+        app:itemTextColor="@color/bnv_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bvn_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

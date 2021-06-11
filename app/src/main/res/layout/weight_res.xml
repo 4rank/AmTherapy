@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/second_wei_view"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:background="@drawable/background_weight">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        tools:ignore="MissingConstraints,ScrollViewCount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+            <TextView
+                android:id="@+id/text_we_main"
+                style="@style/MyTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_wei_second"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView327"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+            <TextView
+                android:id="@+id/textView337"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+            <TextView
+                android:id="@+id/m1"
+                style="@style/MyTextStyle_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_wei_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.125"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.127"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/we1"
+                style="@style/MyTextStyle_res_wei"
+                android:layout_width="105dp"
+                android:layout_height="25dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.857"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.125"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/m2"
+                style="@style/MyTextStyle_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_wei_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.182"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/we2"
+                style="@style/MyTextStyle_res_wei"
+                android:layout_width="105dp"
+                android:layout_height="25dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.857"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.181"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/m3"
+                style="@style/MyTextStyle_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_wei_3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.239"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/we3"
+                style="@style/MyTextStyle_res_wei"
+                android:layout_width="105dp"
+                android:layout_height="25dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.857"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.238"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/m4"
+                style="@style/MyTextStyle_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_wei_4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.295"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/we4"
+                style="@style/MyTextStyle_res_wei"
+                android:layout_width="105dp"
+                android:layout_height="25dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.857"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.294"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/m5"
+                style="@style/MyTextStyle_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_wei_5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.135"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.351"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/we5"
+                style="@style/MyTextStyle_res_wei"
+                android:layout_width="105dp"
+                android:layout_height="25dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.857"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.352"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/m6"
+                style="@style/MyTextStyle_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_wei_6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.135"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.407"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/we6"
+                style="@style/MyTextStyle_res_wei"
+                android:layout_width="105dp"
+                android:layout_height="25dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.857"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.407"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/m7"
+                style="@style/MyTextStyle_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_wei_7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.135"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.464"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/we7"
+                style="@style/MyTextStyle_res_wei"
+                android:layout_width="105dp"
+                android:layout_height="25dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.857"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.464"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/m8"
+                style="@style/MyTextStyle_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_wei_8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.135"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.52"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/we8"
+                style="@style/MyTextStyle_res_wei"
+                android:layout_width="105dp"
+                android:layout_height="25dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.857"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.519"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/m9"
+                style="@style/MyTextStyle_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_wei_9"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.135"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.576"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/we9"
+                style="@style/MyTextStyle_res_wei"
+                android:layout_width="105dp"
+                android:layout_height="25dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.857"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.576"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/m10"
+                style="@style/MyTextStyle_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_wei_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.139"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.632"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/we10"
+                style="@style/MyTextStyle_res_wei"
+                android:layout_width="105dp"
+                android:layout_height="25dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.857"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.633"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/m11"
+                style="@style/MyTextStyle_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_wei_11"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.139"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.687"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/we11"
+                style="@style/MyTextStyle_res_wei"
+                android:layout_width="105dp"
+                android:layout_height="25dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.857"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.688"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/m12"
+                style="@style/MyTextStyle_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_wei_12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.139"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.745"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/we12"
+                style="@style/MyTextStyle_res_wei"
+                android:layout_width="105dp"
+                android:layout_height="25dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.857"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.746"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView329"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+            <Button
+                android:id="@+id/button_meal"
+                style="@style/MyTextStyle_button_gem_else"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_but_weight"
+                android:text="@string/text_wei_meal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.911"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView326"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+            <Button
+                android:id="@+id/button_wei_exit"
+                style="@style/MyTextStyle_button_gem_else"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_but_weight"
+                android:text="@string/text_wei_rep"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.911"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView325"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

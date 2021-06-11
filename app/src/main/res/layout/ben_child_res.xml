@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ben_child_view_res"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:background="@drawable/background_ben">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        tools:ignore="MissingConstraints,ScrollViewCount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textView_ben_res"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_main_ben_child"
+                style="@style/MyTextStyle_title"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027" />
+
+            <TextView
+                android:id="@+id/textView_ben_res1"
+                android:layout_width="350dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.288"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView_ben_res_child_name"
+                style="@style/MyTextStyle"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text=""
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.288"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:layout_width="320dp"
+                android:background="@color/ben4"
+                android:layout_height="0.5dp" />
+
+            <TextView
+                android:id="@+id/textView_ben_res_child_formula"
+                style="@style/MyTextStyle_res_wei"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text=""
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.288"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:layout_width="320dp"
+                android:background="@color/ben4"
+                android:layout_height="0.5dp" />
+
+            <TextView
+                android:id="@+id/textView_ben_res_child_main"
+                style="@style/MyTextStyle"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text=""
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.288"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="0.5dp"
+                android:background="@color/ben4" />
+
+            <TextView
+                android:id="@+id/textView_ben_res_bju"
+                style="@style/MyTextStyle"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_ben_res_bju"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.288"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView_ben_child_res_b"
+                    style="@style/MyTextStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.288"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:background="@color/ben4"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/textView_ben_child_res_j"
+                    style="@style/MyTextStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.288"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:background="@color/ben4"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/textView_ben_child_res_u"
+                    style="@style/MyTextStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.288"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView330"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+            <Button
+                android:id="@+id/button_ben_child_res"
+                style="@style/MyTextStyle_button_gem_else"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_but_ben"
+                android:text="@string/text_ben_res_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.911"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView325"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "761445678406",
+    "project_id": "abtherapy-8b625",
+    "storage_bucket": "abtherapy-8b625.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761445678406:android:a854b32f61d1d2dd64b947",
+        "android_client_info": {
+          "package_name": "com.amtherapy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761445678406-d6l2008gfcctu8i8p53lchiqm77corhn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9fe0qe6G3Qh2bDCGbj_W11d4IkvXXy3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761445678406-d6l2008gfcctu8i8p53lchiqm77corhn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

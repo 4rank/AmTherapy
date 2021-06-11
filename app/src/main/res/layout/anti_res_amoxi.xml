@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/amoxi_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nat1"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        tools:ignore="MissingConstraints,ScrollViewCount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textView109"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+            <TextView
+                android:id="@+id/text_am_main"
+                style="@style/MyTextStyle_weight"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_amoxi_main"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.005"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text_am_prep"
+                style="@style/MyTextStyle_1"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_amoxi_prep"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.074"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView105"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+            <TextView
+                android:id="@+id/texta1"
+                style="@style/MyTextStyle_1"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text_amox_125_5"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.184"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.24" />
+
+            <TextView
+                android:id="@+id/text_amoxi_125_5"
+                style="@style/MyTextStyle_res"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.454"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.284" />
+
+            <View
+                android:layout_width="320dp"
+                android:background="@color/nat3"
+                android:layout_height="0.5dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/texta2"
+                style="@style/MyTextStyle_1"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text_amox_250_5"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.193"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.341" />
+
+            <TextView
+                android:id="@+id/text_amoxi_250_5"
+                style="@style/MyTextStyle_res"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.39" />
+
+            <View
+                android:layout_width="320dp"
+                android:background="@color/nat3"
+                android:layout_height="0.5dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/texta3"
+                style="@style/MyTextStyle_1"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text_amoxit_250"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.181"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.444"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text_amoxi_250"
+                style="@style/MyTextStyle_res"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.499" />
+
+            <View
+                android:layout_width="320dp"
+                android:background="@color/nat3"
+                android:layout_height="0.5dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/texta4"
+                style="@style/MyTextStyle_1"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text_amoxit_500"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.177"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.552" />
+
+            <TextView
+                android:id="@+id/text_amoxi_500"
+                style="@style/MyTextStyle_res"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.601" />
+
+            <View
+                android:layout_width="320dp"
+                android:background="@color/nat3"
+                android:layout_height="0.5dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/texta5"
+                style="@style/MyTextStyle_1"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text_amoxit_750"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.147"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.646" />
+
+            <TextView
+                android:id="@+id/text_amoxi_750"
+                style="@style/MyTextStyle_res"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.521"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.696" />
+
+            <View
+                android:layout_width="320dp"
+                android:background="@color/nat3"
+                android:layout_height="0.5dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/texta6"
+                style="@style/MyTextStyle_1"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text_amoxit_1000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.153"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.741" />
+
+            <TextView
+                android:id="@+id/text_amoxi_1000"
+                style="@style/MyTextStyle_res"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.583"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.791" />
+
+            <TextView
+                android:id="@+id/textViewAb106"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+            <Button
+                android:id="@+id/button_else_ch"
+                style="@style/MyTextStyle_button_gem_else"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_but_anti"
+                android:text="@string/button_amox_any"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.933"
+                tools:ignore="MissingConstraints,SmallSp" />
+
+            <TextView
+                android:id="@+id/textView107"
+                android:layout_width="93dp"
+                android:layout_height="47dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="166dp"
+                tools:layout_editor_absoluteY="686dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nat1"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        tools:ignore="MissingConstraints,ScrollViewCount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/menu_info_title"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_title"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_margin="5dp"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <TextView
+                android:id="@+id/menu_info_text"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_margin="10dp"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <Button
+                android:id="@+id/button_menu_info"
+                style="@style/MyTextStyle_button_gem_else"
+                android:layout_width="120dp"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_but_anti"
+                android:text="@string/botton_convert_cancel"
+                tools:ignore="MissingConstraints,SmallSp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

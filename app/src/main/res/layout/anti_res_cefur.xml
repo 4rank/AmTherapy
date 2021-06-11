@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cefur_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nat1"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        tools:ignore="MissingConstraints,ScrollViewCount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+            <TextView
+                android:id="@+id/text_c_main"
+                style="@style/MyTextStyle_weight"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_amoxi_main"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text_c_prep"
+                style="@style/MyTextStyle_1"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_amoxi_prep"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.091"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView105"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+            <TextView
+                android:id="@+id/textc1"
+                style="@style/MyTextStyle_1"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text_cefur_125_5"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.112"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.268" />
+
+            <TextView
+                android:id="@+id/text_cefur_125_5"
+                style="@style/MyTextStyle_res"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.395"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.316" />
+
+            <View
+                android:layout_width="320dp"
+                android:background="@color/nat3"
+                android:layout_height="0.5dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/textc2"
+                style="@style/MyTextStyle_1"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text_cefur_250_5"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.112"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.37" />
+
+            <TextView
+                android:id="@+id/text_cefur_250_5"
+                style="@style/MyTextStyle_res"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.439" />
+
+            <View
+                android:layout_width="320dp"
+                android:background="@color/nat3"
+                android:layout_height="0.5dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/textc3"
+                style="@style/MyTextStyle_1"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text_cefur_250"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.091"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text_cefur_250"
+                style="@style/MyTextStyle_res"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.473"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.566" />
+
+            <View
+                android:layout_width="320dp"
+                android:background="@color/nat3"
+                android:layout_height="0.5dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/textc4"
+                style="@style/MyTextStyle_1"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text_cefur_500"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.091"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.634" />
+
+            <TextView
+                android:id="@+id/text_cefur_500"
+                style="@style/MyTextStyle_res"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.585"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.709" />
+
+            <TextView
+                android:id="@+id/textView107"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+            <TextView
+                android:id="@+id/textView108"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+            <TextView
+                android:id="@+id/textView109"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+            <Button
+                android:id="@+id/button_else_ch_cefur"
+                style="@style/MyTextStyle_button_gem_else"
+                android:layout_width="153dp"
+                android:layout_height="79dp"
+                android:background="@drawable/custom_but_anti"
+                android:text="@string/button_amox_any"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.946"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textViewAb106"
+                android:layout_width="93dp"
+                android:layout_height="47dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="166dp"
+                tools:layout_editor_absoluteY="686dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

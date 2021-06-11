@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="am.therapy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.AppCompat.Light"
+        tools:ignore="ExtraText">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7626707613561696~5176859119"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/ABTherapy_main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".antibiotics.MainAntiActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity
+            android:name=".weight.WeightActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".weight.WeightActivityRes"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".weight.MealActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".pure.results.ParacetActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".pure.results.IbuprofActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".antibiotics.results.AmoxiActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".antibiotics.results.AmoxiClavActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".antibiotics.AntiActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".pure.MainPRActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".antibiotics.results.CefdinirActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".antibiotics.results.CefiximeActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".antibiotics.results.CefurActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".antibiotics.results.AziActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".antibiotics.results.ClariActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".pure.PRActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".ThingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".hemolitic.MainGEMActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".hemolitic.GEMActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".hemolitic.results.MaltoferActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".hemolitic.results.TotemaActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".PrepareActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".SupportActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".ben.standart.MainBenActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy_bnv">
+        </activity>
+        <activity android:name=".ben.standart.BenActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".ben.standart.BenActivityRes"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".ben.child.MainChildActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy_bnv">
+        </activity>
+        <activity android:name=".ben.child.ChildActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".ben.child.ChildActivityRes"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".drawler_menu.MainMenuInfoActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".dbhelper.ConvertDozeActivity"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+    </application>
+
+</manifest>
