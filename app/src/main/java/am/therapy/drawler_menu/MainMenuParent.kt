@@ -2,6 +2,7 @@ package am.therapy.drawler_menu
 
 import am.therapy.R
 import am.therapy.dbhelper.ConvertDozeActivity
+import am.therapy.icd.MainICD10
 import android.annotation.SuppressLint
 import android.app.ActivityOptions
 import android.content.DialogInterface
@@ -39,6 +40,8 @@ open class MainMenuParent : AppCompatActivity() {
         val text1 = findViewById<TextView>(R.id.mainMenu_text1)
         val text2 = findViewById<TextView>(R.id.mainMenu_text2)
         val text3 = findViewById<TextView>(R.id.mainMenu_text3)
+        val text4 = findViewById<TextView>(R.id.mainMenu_text4)
+//        val text5 = findViewById<TextView>(R.id.mainMenu_text5)
         text0.setOnClickListener { v: View ->
             v.startAnimation(buttonClick)
             val uriIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.amtherapy"))
@@ -62,6 +65,14 @@ open class MainMenuParent : AppCompatActivity() {
             v.startAnimation(buttonClick)
             intentInfo(getString(R.string.menu_info_parent), "Дополнительная информация для родителей")
         }
+        text4.setOnClickListener { v: View ->
+            v.startAnimation(buttonClick)
+            intent(MainICD10::class.java)
+        }
+//        text5.setOnClickListener { v: View ->
+//            v.startAnimation(buttonClick)
+//            intent(MainICD11::class.java)
+//        }
     }
 
     open fun intent(activity: Class<*>?) {
@@ -78,7 +89,7 @@ open class MainMenuParent : AppCompatActivity() {
     @SuppressLint("WrongConstant")
     fun alertMessage() {
         alertDialog = AlertDialog.Builder(this).create()
-        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#DF0101'>ВНИМАНИЕ!</font>",9))
+        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#DF0101'>ВНИМАНИЕ!</font>", 9))
         alertDialog!!.setIcon(R.drawable.attention)
         alertDialog!!.setMessage(getString(R.string.alert_ab_doze))
         alertDialog!!.setButton(AlertDialog.BUTTON_POSITIVE, "Далее") { _: DialogInterface?, _: Int ->

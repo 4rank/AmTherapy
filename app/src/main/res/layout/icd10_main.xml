@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/icd10_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nat1"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        tools:ignore="MissingConstraints,ScrollViewCount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/icd10_title_main"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle"
+                android:text="@string/icd10_main"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:id="@+id/search_button"
+                style="@style/MyTextStyle_button_gem_res"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/attention_but_ab"
+                android:text="@string/search_button_icd10"
+                android:textAllCaps="false"
+                tools:ignore="MissingConstraints"
+                app:drawableStartCompat="@drawable/search"/>
+
+            <TextView
+                android:id="@+id/icd10_title1"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title1"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title1_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title1_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title2"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title2"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title2_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title2_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title3"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title3"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title3_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title3_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title4"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title4"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title4_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title4_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title5"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title5"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title5_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title5_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title6"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title6"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title6_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title6_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title7"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title7"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title7_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title7_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title8"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title8"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title8_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title8_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title9"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title9"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title9_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title9_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title10"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title10"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title10_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title10_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title11"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title11"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title11_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title11_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title12"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title12"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title12_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title12_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title13"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title13"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title13_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title13_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title14"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title14"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title14_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title14_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title15"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title15"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title15_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title15_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title16"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title16"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title16_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title16_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title17"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title17"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title17_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title17_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title18"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title18"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title18_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title18_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title19"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title19"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title19_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title19_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title20"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title20"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title20_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title20_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title21"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title21"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title21_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title21_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title22"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title22"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/icd10_title22_code"
+                android:layout_width="300dp"
+                style="@style/MyTextStyle_res_wei"
+                android:text="@string/icd10_title22_code"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/button_icd10_main"
+                style="@style/MyTextStyle_button_gem_else"
+                android:layout_width="120dp"
+                android:layout_margin="30dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_but_anti"
+                android:text="@string/botton_convert_cancel"
+                tools:ignore="MissingConstraints,SmallSp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

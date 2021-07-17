@@ -13,14 +13,11 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.core.content.ContextCompat
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdView
 import kotlin.math.roundToInt
 
 open class AntiActivity : AppCompatActivity() {
 
     private var dbHelper: DBHelper? = null
-    lateinit var mAdView : AdView
 
     private var amoxiTer = 60
     private var amoxiMax = 2000
@@ -45,10 +42,6 @@ open class AntiActivity : AppCompatActivity() {
         supportActionBar?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.ac_b_anti))
         actionBar!!.setHomeButtonEnabled(true)
         actionBar.setDisplayHomeAsUpEnabled(true)
-
-        mAdView = findViewById(R.id.adview_ab_second)
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
 
         val ml = findViewById<MotionLayout>(R.id.choose_view_ab)
         ml.transitionToStart()

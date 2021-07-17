@@ -9,20 +9,27 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/Theme.AppCompat.Light"
         tools:ignore="ExtraText">
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-7626707613561696~5176859119"/>
-        <activity android:name=".MainActivity"
+        <activity android:name=".SplashActivity"
             android:screenOrientation="portrait"
-            android:label="@string/app_name"
-            android:theme="@style/ABTherapy_main">
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.SEND" />
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy_main">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
             </intent-filter>
         </activity>
         <activity android:name=".antibiotics.MainAntiActivity"
@@ -177,6 +184,26 @@
         </activity>
         <activity android:name=".dbhelper.ConvertDozeActivity"
             android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".icd.MainICD10"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".icd.ICD10"
+            android:label="@string/back_menu_icd"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".icd.ICD10Second"
+            android:label="@string/back_menu_icd"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".icd.search.SearchICD10Activity"
+            android:label="@string/back_menu_icd"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>

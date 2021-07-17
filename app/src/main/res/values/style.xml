@@ -35,6 +35,11 @@
         <item name="android:textColor">#424242</item>
     </style>
 
+    <style name="MyTextStyle_res_weight">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
     <style name="MyTextStyle_button">
         <item name="android:textSize">16dp</item>
         <item name="android:textColor">#424242</item>
@@ -47,6 +52,11 @@
 
     <style name="MyTextStyle_button_gem_else">
         <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="MyTextStyle_button_gem_res">
+        <item name="android:textSize">13dp</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
 

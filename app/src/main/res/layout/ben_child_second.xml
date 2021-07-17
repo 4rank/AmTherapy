@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 ads:adSize="BANNER"
-                ads:adUnitId="@string/banner_id_fake"
+                ads:adUnitId="@string/banner_id"
                 tools:layout_editor_absoluteX="45dp"
                 tools:layout_editor_absoluteY="46dp"
                 app:layout_constraintBottom_toBottomOf="parent"

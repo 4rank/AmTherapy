@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp">
+
+    <item>
+        <shape>
+            <gradient
+                android:angle="270"
+                android:endColor="@color/white"
+                android:startColor="@color/nat1" />
+        </shape>
+    </item>
+
+    <item
+        android:width="250dp"
+        android:height="250dp"
+        android:drawable="@drawable/cat"
+        android:gravity="center" />
+
+    <item
+        android:width="300dp"
+        android:height="185dp"
+        android:bottom="450dp"
+        android:drawable="@drawable/amtherapy_text"
+        android:gravity="center" />
+
+    <item
+        android:width="120dp"
+        android:height="80dp"
+        android:drawable="@drawable/loading"
+        android:gravity="center"
+        android:top="400dp"/>
+
+</layer-list>

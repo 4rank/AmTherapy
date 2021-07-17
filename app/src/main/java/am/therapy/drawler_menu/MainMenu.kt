@@ -3,11 +3,13 @@ package am.therapy.drawler_menu
 import am.therapy.R
 import android.annotation.SuppressLint
 import android.content.Context
+import android.os.Build
 import android.view.LayoutInflater
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.core.content.res.ResourcesCompat
+
 
 @SuppressLint("ViewConstructor")
 class MainMenu(context: Context?, parent: RelativeLayout?) : RelativeLayout(context) {
@@ -15,23 +17,48 @@ class MainMenu(context: Context?, parent: RelativeLayout?) : RelativeLayout(cont
     private fun initView(context: Context?, parent: RelativeLayout?) {
         val view = LayoutInflater.from(context).inflate(R.layout.main_menu, parent, true)
         val image = view.findViewById<ImageView>(R.id.imageView2)
-        image.setImageResource(R.drawable.action_bar)
+        image.setImageResource(R.drawable.drawler_image)
         val text0 = view.findViewById<TextView>(R.id.mainMenu_text0)
         val text1 = view.findViewById<TextView>(R.id.mainMenu_text1)
         val text2 = view.findViewById<TextView>(R.id.mainMenu_text2)
         val text3 = view.findViewById<TextView>(R.id.mainMenu_text3)
-        @SuppressLint("UseCompatLoadingForDrawables") val imgRef = ResourcesCompat.getDrawable(resources, R.drawable.menu_refresh,null)
-        @SuppressLint("UseCompatLoadingForDrawables") val imgGears = ResourcesCompat.getDrawable(resources, R.drawable.menu_gears,null)
-        @SuppressLint("UseCompatLoadingForDrawables") val imgDoc = ResourcesCompat.getDrawable(resources, R.drawable.menu_doctor,null)
-        @SuppressLint("UseCompatLoadingForDrawables") val imgFam = ResourcesCompat.getDrawable(resources, R.drawable.menu_family,null)
-        imgRef?.setBounds(0, 0, 80, 50)
-        imgGears?.setBounds(0, 0, 80, 50)
-        imgDoc?.setBounds(0, 0, 80, 50)
-        imgFam?.setBounds(0, 0, 80, 50)
-        text0.setCompoundDrawables(imgRef, null, null, null)
-        text1.setCompoundDrawables(imgGears, null, null, null)
-        text2.setCompoundDrawables(imgDoc, null, null, null)
-        text3.setCompoundDrawables(imgFam, null, null, null)
+        val text4 = view.findViewById<TextView>(R.id.mainMenu_text4)
+//        val text5 = view.findViewById<TextView>(R.id.mainMenu_text5)
+
+        val sdk = Build.VERSION.SDK_INT
+        if (sdk <= Build.VERSION_CODES.N_MR1) {
+            text0.setCompoundDrawablesWithIntrinsicBounds(
+                    R.drawable.menu_refresh_24sdk, 0, 0, 0)
+            text1.setCompoundDrawablesWithIntrinsicBounds(
+                    R.drawable.menu_gears_24sdk, 0, 0, 0)
+            text2.setCompoundDrawablesWithIntrinsicBounds(
+                    R.drawable.menu_doctor_24sdk, 0, 0, 0)
+            text3.setCompoundDrawablesWithIntrinsicBounds(
+                    R.drawable.menu_family_24sdk, 0, 0, 0)
+            text4.setCompoundDrawablesWithIntrinsicBounds(
+                    R.drawable.menu_icd10_24sdk, 0, 0, 0)
+//            text5.setCompoundDrawablesWithIntrinsicBounds(
+//                    R.drawable.menu_icd11_24sdk, 0, 0, 0)
+        } else {
+            val imgRef = ResourcesCompat.getDrawable(resources, R.drawable.menu_refresh, null)
+            val imgGears = ResourcesCompat.getDrawable(resources, R.drawable.menu_gears, null)
+            val imgDoc = ResourcesCompat.getDrawable(resources, R.drawable.menu_doctor, null)
+            val imgFam = ResourcesCompat.getDrawable(resources, R.drawable.menu_family, null)
+            val imgIcd10 = ResourcesCompat.getDrawable(resources, R.drawable.menu_icd10, null)
+//            val imgIcd11 = ResourcesCompat.getDrawable(resources, R.drawable.menu_icd11, null)
+            imgRef?.setBounds(0, 0, 80, 50)
+            imgGears?.setBounds(0, 0, 80, 50)
+            imgDoc?.setBounds(0, 0, 80, 50)
+            imgFam?.setBounds(0, 0, 80, 50)
+            imgIcd10?.setBounds(0, 0, 80, 50)
+//            imgIcd11?.setBounds(0, 0, 80, 50)
+            text0.setCompoundDrawables(imgRef, null, null, null)
+            text1.setCompoundDrawables(imgGears, null, null, null)
+            text2.setCompoundDrawables(imgDoc, null, null, null)
+            text3.setCompoundDrawables(imgFam, null, null, null)
+            text4.setCompoundDrawables(imgIcd10, null, null, null)
+//            text5.setCompoundDrawables(imgIcd11, null, null, null)
+        }
     }
 
     init {
