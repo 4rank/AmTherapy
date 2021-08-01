@@ -37,7 +37,24 @@ class ChildActivityRes : AppCompatActivity() {
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         }
         val args = intent.extras
-        var sexName = "Ребенок"
+        val name = getString(R.string.sex_name)
+        val boy = getString(R.string.sex_name_boy)
+        val girl = getString(R.string.sex_name_girl)
+        val kg = getString(R.string.ben_kg)
+        val res1 = getString(R.string.ben_third1)
+        val res2 = getString(R.string.ben_third2)
+        val res3 = getString(R.string.ben_third3)
+        val res4 = getString(R.string.ben_third4)
+        val res5 = getString(R.string.ben_third5)
+        val res6 = getString(R.string.ben_third6)
+        val res7 = getString(R.string.ben_third7)
+        val res8 = getString(R.string.ben_third8)
+        val res9 = getString(R.string.ben_third9)
+        val res10 = getString(R.string.ben_third10)
+        val res11 = getString(R.string.ben_third11)
+        val res12 = getString(R.string.ben_third12)
+        val res13 = getString(R.string.ben_second5)
+        var sexName = name
         var fa = 1.0
         var fz = 1.0
         var fr = 1.0
@@ -60,15 +77,15 @@ class ChildActivityRes : AppCompatActivity() {
             weight = 1.0
         }
         val lifeMonth = args["age_child_sec"] as Int
-        if (sex == "Мальчик") {
-            sexName = "Мальчик"
+        if (sex == boy) {
+            sexName = boy
             oo = 60.9 * weight - 54
-            ooText = "((60.9 * $weight кг) - 54)"
+            ooText = "((60.9 * $weight $kg) - 54)"
         }
-        if (sex == "Девочка") {
-            sexName = "Девочка"
+        if (sex == girl) {
+            sexName = girl
             oo = 61 * weight - 51
-            ooText = "((61 * $weight кг) - 51)"
+            ooText = "((61 * $weight $kg) - 51)"
         }
         val faV = args["fa_ch"] as Int
         if (faV == R.id.radio_FA2_child) {
@@ -229,15 +246,15 @@ class ChildActivityRes : AppCompatActivity() {
         }
         val rep = oo * fa * fz * fp * dmt * tf * fr
         val roundRep = (rep * 10.0).roundToInt() / 10.0
-        resName.text = """$sexName с массой тела: $weightGrams г.
-            | Возраст: $lifeMonth мес.""".trimMargin()
-        resForm.text = """Формула расчета фактической потребности ребенка в энергии:
-            |$ooText$faText$fzText$fpText$dmtText$tfText$frText = $roundRep ккал/сут""".trimMargin()
-        res.text = """Энергетическая потребность составляет: $roundRep ккал в сутки
-            |Потребность в жидкости: $vodaMin - $vodaMax мл в сутки""".trimMargin()
-        resB.text = "Белки:\n$bel г."
-        resJ.text = "Жиры:\n$jir г."
-        resU.text = "Углеводы:\n$uglevod г."
+        resName.text = """$sexName $res1 $weightGrams $res13
+            | $res2 $lifeMonth $res3""".trimMargin()
+        resForm.text = """$res4
+            |$ooText$faText$fzText$fpText$dmtText$tfText$frText = $roundRep $res5""".trimMargin()
+        res.text = """$res6 $roundRep $res7
+            |$res8 $vodaMin - $vodaMax $res9""".trimMargin()
+        resB.text = "$res10\n$bel $res13"
+        resJ.text = "$res11\n$jir $res13"
+        resU.text = "$res12\n$uglevod $res13"
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

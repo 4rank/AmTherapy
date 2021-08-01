@@ -37,7 +37,24 @@ class BenActivityRes : AppCompatActivity() {
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         }
         val args = intent.extras
-        var sexName = "Ребенок"
+        val name = getString(R.string.sex_name)
+        val boy = getString(R.string.sex_name_boy)
+        val girl = getString(R.string.sex_name_girl)
+        val kg = getString(R.string.ben_kg)
+        val res1 = getString(R.string.ben_third1)
+        val res2 = getString(R.string.ben_third13)
+        val res3 = getString(R.string.ben_third14)
+        val res4 = getString(R.string.ben_third4)
+        val res5 = getString(R.string.ben_third5)
+        val res6 = getString(R.string.ben_third6)
+        val res7 = getString(R.string.ben_third7)
+        val res8 = getString(R.string.ben_third8)
+        val res9 = getString(R.string.ben_third9)
+        val res10 = getString(R.string.ben_third10)
+        val res11 = getString(R.string.ben_third11)
+        val res12 = getString(R.string.ben_third12)
+        val res13 = getString(R.string.ben_second5)
+        var sexName = name
         var fa = 1.0
         var fz = 1.0
         var fr = 1.0
@@ -57,37 +74,37 @@ class BenActivityRes : AppCompatActivity() {
         val age = args["age_sec"] as Int
         val yearDif = age / 365.25
         val lifeYears = yearDif.toInt()
-        if (sex == "Мальчик") {
-            sexName = "Мальчик"
+        if (sex == boy) {
+            sexName = boy
             when {
                 lifeYears <= 3 -> {
                     oo = 60.9 * weight - 54
-                    ooText = "((60.9 * $weight кг) - 54)"
+                    ooText = "((60.9 * $weight $kg) - 54)"
                 }
                 lifeYears <= 10 -> {
                     oo = 22.7 * weight + 495
-                    ooText = "((22.7 * $weight кг) + 495)"
+                    ooText = "((22.7 * $weight $kg) + 495)"
                 }
                 else -> {
                     oo = 17.5 * weight + 651
-                    ooText = "((17.5 * $weight кг) + 651)"
+                    ooText = "((17.5 * $weight $kg) + 651)"
                 }
             }
         }
-        if (sex == "Девочка") {
-            sexName = "Девочка"
+        if (sex == girl) {
+            sexName = girl
             when {
                 lifeYears <= 3 -> {
                     oo = (61 * weight - 51)
-                    ooText = "((61 * $weight кг) - 51)"
+                    ooText = "((61 * $weight $kg) - 51)"
                 }
                 lifeYears <= 10 -> {
                     oo = 22.5 * weight + 499
-                    ooText = "((22.5 * $weight кг) + 499)"
+                    ooText = "((22.5 * $weight $kg) + 499)"
                 }
                 else -> {
                     oo = 12.2 * weight + 746
-                    ooText = "((12.2 * $weight кг) + 746)"
+                    ooText = "((12.2 * $weight $kg) + 746)"
                 }
             }
         }
@@ -251,16 +268,16 @@ class BenActivityRes : AppCompatActivity() {
         val year = args["year_sec"] as Int
         val month = args["month_sec"] as Int
         val day = args["day_sec"] as Int
-        resName.text = """$sexName с массой тела: $weight кг.
-            | Дата рождения $day.$month.$year
-            | Полных лет: $lifeYears""".trimMargin()
-        resForm.text = """Формула расчета фактической потребности ребенка в энергии:
-            |$ooText$faText$fzText$fpText$dmtText$tfText$frText = $roundRep ккал/сут""".trimMargin()
-        res.text = """Энергетическая потребность составляет: $roundRep ккал в сутки
-            |Потребность в жидкости: $voda мл в сутки""".trimMargin()
-        resB.text = "Белки:\n$belJirMin - $belJirMax г."
-        resJ.text = "Жиры:\n$belJirMin - $belJirMax г."
-        resU.text = "Углеводы:\n$uglevodMin - $uglevodMax г."
+        resName.text = """$sexName $res1 $weight $kg
+            | $res2 $day.$month.$year
+            | $res3 $lifeYears""".trimMargin()
+        resForm.text = """$res4
+            |$ooText$faText$fzText$fpText$dmtText$tfText$frText = $roundRep $res5""".trimMargin()
+        res.text = """$res6 $roundRep $res7
+            |$res8 $voda $res9""".trimMargin()
+        resB.text = "$res10\n$belJirMin - $belJirMax $res13"
+        resJ.text = "$res11\n$belJirMin - $belJirMax $res13"
+        resU.text = "$res12\n$uglevodMin - $uglevodMax $res13"
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

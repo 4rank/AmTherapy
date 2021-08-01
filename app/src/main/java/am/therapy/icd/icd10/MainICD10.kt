@@ -1,4 +1,4 @@
-package am.therapy.icd
+package am.therapy.icd.icd10
 
 import am.therapy.data.Storage
 import am.therapy.MainActivity
@@ -13,15 +13,22 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
 
 
 class MainICD10 : AppCompatActivity() {
 
     private val buttonClick = AlphaAnimation(1f, 0.65f)
+    lateinit var mAdView : AdView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.icd10_main)
+
+        mAdView = findViewById(R.id.adview_icd10_main)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
 
         val actionBar = supportActionBar
         supportActionBar?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.ac_b_anti))
@@ -72,7 +79,7 @@ class MainICD10 : AppCompatActivity() {
         text20.setTextColor(Color.parseColor("#1F65FA"))
         text21.setTextColor(Color.parseColor("#1F65FA"))
         text22.setTextColor(Color.parseColor("#1F65FA"))
-        val search =findViewById<Button>(R.id.search_button)
+        val search =findViewById<Button>(R.id.search_button_icd10)
         val but = findViewById<Button>(R.id.button_icd10_main)
         but.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)

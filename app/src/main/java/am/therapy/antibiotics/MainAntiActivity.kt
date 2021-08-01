@@ -112,30 +112,42 @@ class MainAntiActivity : AppCompatActivity() {
         }
         cursor!!.close()
         dbHelper!!.close()
+        val ad = getString(R.string.alert_dose)
+        val adm = getString(R.string.alert_ab1)
+        val ab1 = getString(R.string.alert_ab2)
+        val ab2 = getString(R.string.alert_ab3)
+        val ab3 = getString(R.string.alert_ab4)
+        val ab4 = getString(R.string.alert_ab5)
+        val ab5 = getString(R.string.alert_ab6)
+        val ab6 = getString(R.string.alert_ab7)
+        val ab7 = getString(R.string.alert_ab8)
+        val adMg = getString(R.string.alert_mg)
+        val adKg = getString(R.string.alert_mg_kg)
+        val adMax = getString(R.string.alert_max)
         alertDialog = AlertDialog.Builder(this).create()
-        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#0489B1'>Дозировки препаратов</font>", 1))
-        alertDialog!!.setMessage("""Терапевтические дозировки антибактериальных препаратов:
+        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#0489B1'>$ad</font>", 1))
+        alertDialog!!.setMessage("""$adm
 
-•Amoxicillinum = $amoxiTer мг/кг.
-Max суточная = $amoxiMax мг
+$ab1 $amoxiTer $adKg
+$adMax $amoxiMax $adMg
 
-•Clarithromycin = $claryTer мг/кг.
-Max суточная = $claryMax мг
+$ab2 $claryTer $adKg
+$adMax $claryMax $adMg
 
-•Azithromycinum = $aziTer мг/кг.
-Max суточная = $aziMax мг
+$ab3 $aziTer $adKg
+$adMax $aziMax $adMg
 
-•Cefuroximum = $cefurTer мг/кг.
-Max суточная = $cefurMax мг
+$ab4 $cefurTer $adKg
+$adMax $cefurMax $adMg
 
-•Cefdinir = $cefdinirTer мг/кг.
-Max суточная = $cefdinirMax мг
+$ab5 $cefdinirTer $adKg
+$adMax $cefdinirMax $adMg
 
-•Cefixime = $cefiximeTer мг/кг.
-Max суточная = $cefiximeMax мг
+$ab6 $cefiximeTer $adKg
+$adMax $cefiximeMax $adMg
 
-•Amoxicillin/clavulanic acid = $amoxiclavTer мг/кг.
-Max суточная = $amoxiclavMax мг
+$ab7 $amoxiclavTer $adKg.
+$adMax $amoxiclavMax $adMg
 """)
         alertDialog!!.setButton(AlertDialog.BUTTON_POSITIVE, "OK") { _: DialogInterface?, _: Int -> alertDialog!!.cancel() }
         vVod.setOnKeyListener { _: View?, keyCode: Int, event: KeyEvent ->

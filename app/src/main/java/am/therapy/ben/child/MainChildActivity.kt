@@ -57,22 +57,24 @@ class MainChildActivity : AppCompatActivity() {
         can5.setOnClickListener { closeET() }
         button.setOnClickListener { start() }
         at.setOnClickListener { alertDialog!!.show() }
+        val ad = getString(R.string.alert_ben)
+        val adm1 = getText(R.string.alert_ben1)
+        val adm2 = getText(R.string.alert_ben2)
+        val adm3 = getText(R.string.alert_ben3)
+        val adm4 = getText(R.string.alert_ben4)
+        val mes1 = getText(R.string.ben_mes1)
+        val mes2 = getText(R.string.ben_mes2)
+        val mes3 = getText(R.string.ben_mes3)
         alertDialog = AlertDialog.Builder(this).create()
-        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#026818'>Расчёт основного обмена (дети до года)</font>",3))
+        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#026818'>$ad</font>",3))
         alertDialog!!.setMessage("""
-            Расчёт основного обмена для детей до года (ккал/день):
-            мальчики: (60,9 x вес в кг)–54
-            девочки: (61 x вес в кг)–51
+$adm1
             
-            Формула расчёта фактической потребности больного в энергии (действительный расход энергии):
-            ДРЕ = ОО х ФА х ФЗ х ФР х ФП х ТФ х ДМТ
+$adm2
             
-            Будьте внимательны! В разных странах используются различные поправочные коэффициенты. 
-            Указывайте только те, которые посчитаете нужным. Неуказанные коэффициенты равны 1.0
+$adm3
             
-            Расчет потребности в жидкости:
-            масса тела 0–10 кг–100–150 мл/кг
-            масса тела 10–20 кг–1000 мл на 10 кг + 50 мл/на каждый кг массы тела выше 10 кг
+$adm4
             
             """.trimIndent())
         alertDialog!!.setButton(AlertDialog.BUTTON_POSITIVE, "OK") { _: DialogInterface?, _: Int -> alertDialog!!.cancel() }
@@ -98,13 +100,13 @@ class MainChildActivity : AppCompatActivity() {
             @SuppressLint("SetTextI18n")
             override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
                 if (progress < 2) {
-                    textSB.text = "$progress месяц"
+                    textSB.text = "$progress $mes1"
                 }
                 if (progress in 2..4) {
-                    textSB.text = "$progress месяца"
+                    textSB.text = "$progress $mes2"
                 }
                 if (progress in 5..12) {
-                    textSB.text = "$progress месяцев"
+                    textSB.text = "$progress $mes3"
                 }
             }
 

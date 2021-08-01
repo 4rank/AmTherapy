@@ -2,7 +2,6 @@ package am.therapy.antibiotics.results
 
 import am.therapy.MainActivity
 import am.therapy.R
-import am.therapy.antibiotics.AntiActivity
 import am.therapy.antibiotics.MainAntiActivity
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -33,10 +32,14 @@ class ClariActivity : AppCompatActivity() {
         val s250 = findViewById<TextView>(R.id.text_clari_250_5)
         val t250 = findViewById<TextView>(R.id.text_clari_250)
         val t500 = findViewById<TextView>(R.id.text_clari_500)
-        s125.text = "По " + clS125 + "мл. 2 раза в день"
-        s250.text = "По " + clS250 + "мл. 2 раза в день"
-        t250.text = "По $clT250rd2 таб. 2 раза в день"
-        t500.text = "По $clT500rd1 таб. 1 раз в день"
+        val po = getString(R.string.dose_text_start)
+        val ml2rd = getString(R.string.dose_text_2rd_s_else)
+        val t2rd = getString(R.string.dose_text_2rd_t_end_else)
+        val t1rd = getString(R.string.dose_text_1rd_t_end_else)
+        s125.text = "$po $clS125$ml2rd"
+        s250.text = "$po $clS250$ml2rd"
+        t250.text = "$po $clT250rd2 $t2rd"
+        t500.text = "$po $clT500rd1 $t1rd"
         val main = findViewById<Button>(R.id.button_else_ch_cl)
         main.setOnClickListener {
             val intent = Intent(this, MainAntiActivity::class.java)

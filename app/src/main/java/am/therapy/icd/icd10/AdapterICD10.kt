@@ -1,4 +1,4 @@
-package am.therapy.icd
+package am.therapy.icd.icd10
 
 import am.therapy.data.ICD10Data
 import android.view.LayoutInflater
@@ -32,7 +32,8 @@ class AdapterICD10(
         private var currentViewHolderDes: ICD10Data? = null
         private val desCode = view.findViewById<TextView>(R.id.des_dif)
         private val desName = view.findViewById<TextView>(R.id.des_name)
-
+        private val name = view.findViewById<TextView>(R.id.fragment_text)
+        private val lang = name.text.toString()
         init {
             view.setOnClickListener {
                 currentViewHolderDes?.let {
@@ -42,9 +43,17 @@ class AdapterICD10(
         }
 
         fun bindViewHolder(currentDes: ICD10Data) {
-            currentViewHolderDes = currentDes
-            desCode.text = currentDes.desDif
-            desName.text = currentDes.desDifName
+            if(lang == "Code:"){
+                currentViewHolderDes = currentDes
+                desCode.text = currentDes.desDif
+                desName.text = currentDes.desDifNameENG
+            }
+            else if (lang =="Код:"){
+                currentViewHolderDes = currentDes
+                desCode.text = currentDes.desDif
+                desName.text = currentDes.desDifNameRU
+            }
         }
+
     }
 }

@@ -24,7 +24,7 @@ class ThingsActivity : AppCompatActivity() {
         val gt = findViewById<TextView>(R.id.text_things)
         @SuppressLint("UseCompatLoadingForDrawables") val flag = ResourcesCompat.getDrawable(resources, R.drawable.belarus,null)
         flag?.setBounds(0, 0, 630, 350)
-        if (thing.equals("жыве")){
+        if (thing.equals("1")){
             gt.text = "Жыве Вечна!"
             gt.setCompoundDrawables(null, null, null, flag)
         }

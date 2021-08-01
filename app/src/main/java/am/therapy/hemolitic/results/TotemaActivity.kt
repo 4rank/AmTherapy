@@ -30,10 +30,16 @@ class TotemaActivity : AppCompatActivity() {
         val totem10R = args["totem_amp10_r"] as Double
         val totem10R2rd = args["totem_amp10_r_2rd"] as Double
         val totem = findViewById<TextView>(R.id.text_totem_cap_10)
-        totem.text = """ПД: внутрь по ${totem10}мл.($totem10R амп.) 1р/д либо ${totem102rd}мл.(${totem10R2rd}амп.) 2р/д
+        val pd = getString(R.string.gem_pd)
+        val ml1 = getString(R.string.gem_ml1)
+        val amp1 = getString(R.string.gem_amp1rd)
+        val amp2 = getString(R.string.gem_amp2rd)
+        val ld1 = getString(R.string.gem_ld1)
+        val ld2 = getString(R.string.gem_ld2)
+        totem.text = """$pd ${totem10}$ml1$totem10R $amp1 ${totem102rd}$ml1${totem10R2rd}$amp2
             |
-            |ЛД: Лекарственная дозировка препарата Железа Глюконат у детей до 1 года равна профилактической. От 1 года до 5 лет - 1 ампула в сутки. От 6 лет до 12 - 2 ампулы в сутки. 
-            |У детей старшего возраста лечебная дозировка определяется в зависимости от степени тяжести анемии. """.trimMargin()
+            |$ld1 
+            |$ld2 """.trimMargin()
         val main = findViewById<Button>(R.id.button_else_totem)
         main.setOnClickListener {
             val intent = Intent(this, MainGEMActivity::class.java)

@@ -2,7 +2,6 @@ package am.therapy.antibiotics.results
 
 import am.therapy.MainActivity
 import am.therapy.R
-import am.therapy.antibiotics.AntiActivity
 import am.therapy.antibiotics.MainAntiActivity
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -33,10 +32,13 @@ class AziActivity : AppCompatActivity() {
         val s200 = findViewById<TextView>(R.id.text_azi_200_5)
         val t250 = findViewById<TextView>(R.id.text_azi_250)
         val t500 = findViewById<TextView>(R.id.text_azi_500)
-        s100.text = "По " + aziS100 + "мл. 1 раз в день"
-        s200.text = "По " + aziS200 + "мл. 1 раз день"
-        t250.text = "По $aziT250 таб. либо капсуле 1 раз в день"
-        t500.text = "По $aziT500 таб. либо капсуле 1 раз в день"
+        val po = getString(R.string.dose_text_start)
+        val ml1rd = getString(R.string.dose_text_1rd_s)
+        val t1rd = getString(R.string.dose_text_1rd_t_end)
+        s100.text = "$po $aziS100$ml1rd"
+        s200.text = "$po $aziS200$ml1rd"
+        t250.text = "$po $aziT250 $t1rd"
+        t500.text = "$po $aziT500 $t1rd"
 
         val main = findViewById<Button>(R.id.button_else_ch_az)
         main.setOnClickListener {

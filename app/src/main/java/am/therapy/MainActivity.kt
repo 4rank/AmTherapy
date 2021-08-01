@@ -104,11 +104,12 @@ class MainActivity : MainMenuParent() {
     }
 
     private fun send() {
+        val send= getString(R.string.main_send)
         val sendIntent = Intent()
         sendIntent.action = Intent.ACTION_SEND
         sendIntent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.amtherapy")
         sendIntent.type = "text/plain"
-        val shareIntent = Intent.createChooser(sendIntent, "Поделиться AmTherapy")
+        val shareIntent = Intent.createChooser(sendIntent, send)
         startActivity(shareIntent)
     }
 

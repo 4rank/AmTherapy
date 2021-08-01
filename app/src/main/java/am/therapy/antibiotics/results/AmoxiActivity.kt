@@ -42,12 +42,18 @@ class AmoxiActivity : AppCompatActivity() {
         val t500 = findViewById<TextView>(R.id.text_amoxi_500)
         val t750 = findViewById<TextView>(R.id.text_amoxi_750)
         val t1000 = findViewById<TextView>(R.id.text_amoxi_1000)
-        s125.text = "По " + amS125 + "мл. 2р/д либо по " + amS1253rd + "мл. 3р/д"
-        s250.text = "По " + amS250 + "мл. 2р/д либо по " + amS2503rd + "мл. 3р/д"
-        t250.text = "По $amT250rd2 таб. 2р/д либо по $amT250rd3 таб. 3р/д"
-        t500.text = "По $amT500rd2 таб. 2р/д либо по $amT500rd3 таб. 3р/д"
-        t750.text = "По $amT750rd2 таб. 2р/д либо по $amT750rd3 таб. 3р/д"
-        t1000.text = "По $amT1000rd2 таб. 2 р/д"
+        val po = getString(R.string.dose_text_start)
+        val ml2rd = getString(R.string.dose_text_2rd_s)
+        val ml3rd = getString(R.string.dose_text_3rd_s)
+        val t2rd = getString(R.string.dose_text_2rd_t)
+        val t3rd = getString(R.string.dose_text_3rd_t)
+        val t2 = getString(R.string.dose_text_2rd_t_end)
+        s125.text = "$po $amS125$ml2rd $amS1253rd$ml3rd"
+        s250.text = "$po $amS250$ml2rd $amS2503rd$ml3rd"
+        t250.text = "$po $amT250rd2 $t2rd $amT250rd3$t3rd"
+        t500.text = "$po $amT500rd2 $t2rd $amT500rd3$t3rd"
+        t750.text = "$po $amT750rd2 $t2rd $amT750rd3$t3rd"
+        t1000.text = "$po $amT1000rd2 $t2"
 
         val main = findViewById<Button>(R.id.button_else_ch)
         main.setOnClickListener {

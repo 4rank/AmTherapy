@@ -27,6 +27,22 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/des_icd10_name_main"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                style="@style/MyTextStyle_res_wei"
+                android:layout_marginEnd="130dp"
+                android:gravity="center"
+                android:text="@string/icd10_second_main"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.265" />
+
+            <TextView
                 android:id="@+id/des_icd10_name"
                 android:layout_width="315dp"
                 android:layout_height="wrap_content"

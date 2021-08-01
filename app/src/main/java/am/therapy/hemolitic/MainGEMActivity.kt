@@ -57,16 +57,17 @@ class MainGEMActivity : AppCompatActivity() {
         can3.setOnClickListener { closeET() }
         can4.setOnClickListener { closeET() }
         at.setOnClickListener { alertDialog!!.show() }
+        val ad = getString(R.string.alert_dose)
+        val ad1 = getText(R.string.gem_ad1)
+        val ad2 = getText(R.string.gem_ad2)
+        val ad3 = getText(R.string.gem_ad3)
         alertDialog = AlertDialog.Builder(this).create()
-        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#7C02BA'>Дозировки препаратов</font>",4))
-        alertDialog!!.setMessage("""Терапевтические дозировки антианемических препаратов:
+        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#7C02BA'>$ad</font>",4))
+        alertDialog!!.setMessage("""$ad1
 
-•Ferri (III) hydroxydi polymaltozi:
- min = 2.5 мг/кг, max = 5 мг/кг
-Max суточная = 300мг
+$ad2
 
-•Ferri gluconas: 3 мг/кг
-Max суточная = 50мг
+$ad3
 """)
         alertDialog!!.setButton(AlertDialog.BUTTON_POSITIVE, "OK") { _: DialogInterface?, _: Int -> alertDialog!!.cancel() }
         vVod.setOnKeyListener { _: View?, keyCode: Int, event: KeyEvent ->

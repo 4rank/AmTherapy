@@ -31,9 +31,12 @@ class CefdinirActivity : AppCompatActivity() {
         val s125 = findViewById<TextView>(R.id.text_cefdinir_125_5)
         val s250 = findViewById<TextView>(R.id.text_cefdinir_250_5)
         val t300 = findViewById<TextView>(R.id.text_cefdinir_300)
-        s125.text = "По " + cefS125 + "мл. 2 раза в день"
-        s250.text = "По " + cefS250 + "мл. 2 раза в день"
-        t300.text = "По $cefT300rd2 таб. 2 раза в день"
+        val po = getString(R.string.dose_text_start)
+        val ml2rd = getString(R.string.dose_text_2rd_s_else)
+        val tl2rd = getString(R.string.dose_text_2rd_t_end_else)
+        s125.text = "$po $cefS125$ml2rd"
+        s250.text = "$po $cefS250$ml2rd"
+        t300.text = "$po $cefT300rd2 $tl2rd"
         val main = findViewById<Button>(R.id.button_else_ch_cefdinir)
         main.setOnClickListener {
             val intent = Intent(this, MainAntiActivity::class.java)

@@ -68,25 +68,18 @@ class MainBenActivity : AppCompatActivity() {
         can5.setOnClickListener { closeET() }
         button.setOnClickListener { start() }
         at.setOnClickListener { alertDialog!!.show() }
+        val ad = getString(R.string.alert_b)
+        val adm1 = getText(R.string.alert_b1)
+        val adm2 = getText(R.string.alert_b2)
+        val adm3 = getText(R.string.alert_b3)
         alertDialog = AlertDialog.Builder(this).create()
-        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#026818'>Расчет основного обмена</font>", 2))
+        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#026818'>$ad</font>", 2))
         alertDialog!!.setMessage("""
-            Расчёт основного обмена для детей (ккал/день):
-            мальчики:1–3года: (60,9 x вес в кг)–54
-            3–10 лет: (22,7 x вес в кг) + 495
-            10–18 лет: (17,5 x вес в кг)+ 651
-            девочки:1–3года: (61 x вес в кг)–51
-            3–10 лет: (22,5 x вес в кг) + 499
-            10–18 лет: (12,2 x вес в кг)+ 746
+$adm1
             
-            Формула расчёта фактической потребности больного в энергии (действительный расход энергии):
-            ДРЕ = ОО х ФА х ФЗ х ФР х ФП х ТФ х ДМТ
-            Будьте внимательны! В разных странах используются различные поправочные коэффициенты. Указывайте только те, которые посчитаете нужным. Неуказанные коэффициенты равны 1.0
-            Расчет потребности в жидкости:
-            масса тела 0–10 кг–100–150 мл/кг
-            масса тела 10–20 кг–1000 мл на 10 кг + 50 мл/на каждый кг массы тела выше 10 кг
-            более 20кг–1500 мл до 20 кг + 20 мл/на каждый кг массы тела выше 20 кг
-            максимально–2400 мл/сутки
+$adm2
+            
+$adm3
             """.trimIndent())
         alertDialog!!.setButton(AlertDialog.BUTTON_POSITIVE, "OK") { _: DialogInterface?, _: Int -> alertDialog!!.cancel() }
         vvod.setOnKeyListener(View.OnKeyListener setOnKeyListener@{ _: View?, keyCode: Int, event: KeyEvent ->
@@ -118,10 +111,11 @@ class MainBenActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     var myCallBack = OnDateSetListener { _, year, monthOfYear, dayOfMonth ->
+        val age = getString(R.string.ben_borth)
         myYear = year
         myMonth = monthOfYear + 1
         myDay = dayOfMonth
-        date!!.text = "Дата рождения: $myDay.$myMonth.$myYear"
+        date!!.text = "$age $myDay.$myMonth.$myYear"
     }
 
     fun start() {

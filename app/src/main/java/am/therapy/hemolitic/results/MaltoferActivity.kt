@@ -38,14 +38,21 @@ class MaltoferActivity : AppCompatActivity() {
         val cap50 = findViewById<TextView>(R.id.text_mal_cap_50)
         val sir10 = findViewById<TextView>(R.id.text_mal_sir_100)
         val tab100 = findViewById<TextView>(R.id.text_mal_tab_100)
-        cap50.text = """ПД: внутрь по $mals10minCap кап. 1р/д либо $mals10minCap2rd кап. 2р/д
-            |ЛД: внутрь по $mals10maxCap кап. 1р/д либо $mals10maxCap2rd кап. 2р/д""".trimMargin()
+        val pd = getString(R.string.gem_pd)
+        val ld = getString(R.string.gem_ld)
+        val cap1 = getString(R.string.gem_cap1rd)
+        val cap2 = getString(R.string.gem_cap2rd)
+        val ml1 = getString(R.string.gem_ml1rd)
+        val ml2 = getString(R.string.gem_ml2rd)
+        val tab = getString(R.string.gem_tab1rd)
+        cap50.text = """$pd $mals10minCap $cap1 $mals10minCap2rd $cap2
+            |$ld $mals10maxCap $cap1 $mals10maxCap2rd $cap2""".trimMargin()
         sir10.text = """
-            ПД: внутрь по ${malS10min}мл. 1р/д либо ${mals10min2rd}мл. 2р/д
-            ЛД: внутрь по ${malS10max}мл 1р/д либо ${mals10max2rd}мл. 2р/д
+            $pd ${malS10min}$ml1 ${mals10min2rd}$ml2
+            $ld ${malS10max}$ml1 ${mals10max2rd}$ml2
             """.trimIndent()
-        tab100.text = """ПД: внутрь по $malT100min таб. 1р/д
-            |ЛД: внутрь по $malT100max таб. 1р/д""".trimMargin()
+        tab100.text = """$pd $malT100min $tab
+            |$ld $malT100max $tab""".trimMargin()
         val main = findViewById<Button>(R.id.button_else_mal)
         main.setOnClickListener {
             val intent = Intent(this, MainGEMActivity::class.java)

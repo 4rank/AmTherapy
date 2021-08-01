@@ -2,7 +2,6 @@ package am.therapy.antibiotics.results
 
 import am.therapy.MainActivity
 import am.therapy.R
-import am.therapy.antibiotics.AntiActivity
 import am.therapy.antibiotics.MainAntiActivity
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -42,12 +41,18 @@ class AmoxiClavActivity : AppCompatActivity() {
         val t250 = findViewById<TextView>(R.id.text_amoxi_clav_250)
         val t500 = findViewById<TextView>(R.id.text_amoxi_clav_500)
         val t875 = findViewById<TextView>(R.id.text_amoxi_clav_875)
-        s125.text = "По " + augS125 + "мл. 2р/д либо по " + augS1253rd + "мл. 3р/д"
-        s200.text = "По " + augS200 + "мл. 2р/д либо по " + augS2003rd + "мл. 3р/д"
-        s400.text = "По " + aug400rd2 + "мл. 2р/д либо по " + aug400rd3 + "мл. 3р/д"
-        t250.text = "По " + augT250rd2 + "мл. 2р/д либо по " + augT250rd3 + "мл. 3р/д"
-        t500.text = "По $augT500rd2 таб. 2р/д либо по $augT500rd3 таб. 3р/д"
-        t875.text = "По $augT875rd2 таб. 2р/д"
+        val po = getString(R.string.dose_text_start)
+        val ml2rd = getString(R.string.dose_text_2rd_s)
+        val ml3rd = getString(R.string.dose_text_3rd_s)
+        val t2rd = getString(R.string.dose_text_2rd_t)
+        val t3rd = getString(R.string.dose_text_3rd_t)
+        val t2 = getString(R.string.dose_text_2rd_t_end)
+        s125.text = "$po $augS125$ml2rd $augS1253rd$ml3rd"
+        s200.text = "$po $augS200$ml2rd $augS2003rd$ml3rd"
+        s400.text = "$po $aug400rd2$ml2rd $aug400rd3$ml3rd"
+        t250.text = "$po $augT250rd2$ml2rd $augT250rd3$ml3rd"
+        t500.text = "$po $augT500rd2 $t2rd $augT500rd3$t3rd"
+        t875.text = "$po $augT875rd2 $t2"
 
         val main = findViewById<Button>(R.id.button_else_ch_clav)
         main.setOnClickListener {

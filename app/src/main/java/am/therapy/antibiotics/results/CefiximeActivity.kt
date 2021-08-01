@@ -2,7 +2,6 @@ package am.therapy.antibiotics.results
 
 import am.therapy.MainActivity
 import am.therapy.R
-import am.therapy.antibiotics.AntiActivity
 import am.therapy.antibiotics.MainAntiActivity
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -31,8 +30,13 @@ class CefiximeActivity : AppCompatActivity() {
         val cefT4002rd = args["tab_cefixim4002rd"] as Double
         val s100 = findViewById<TextView>(R.id.text_cefixim_100_5)
         val t400 = findViewById<TextView>(R.id.text_cefixim_400)
-        s100.text = "По " + cefS100 + "мл. 1 р/д либо по " + cefS1002rd + "мл. 2р/д"
-        t400.text = "По $cefT400 таб. 1 р/д либо по $cefT4002rd таб. 2р/д"
+        val po = getString(R.string.dose_text_start)
+        val ml1rd = getString(R.string.dose_text_1rd_s_else)
+        val ml2rd = getString(R.string.dose_text_2rd_s_rd)
+        val t1rd = getString(R.string.dose_text_1rd_t)
+        val t2rd = getString(R.string.dose_text_2rd_t_end)
+        s100.text = "$po $cefS100$ml1rd $cefS1002rd$ml2rd"
+        t400.text = "$po $cefT400 $t1rd $cefT4002rd $t2rd"
         val main = findViewById<Button>(R.id.button_else_ch_cefixim)
         main.setOnClickListener {
             val intent = Intent(this, MainAntiActivity::class.java)

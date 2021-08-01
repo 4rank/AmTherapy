@@ -48,6 +48,7 @@ class PrepareActivity : AppCompatActivity() {
 
     @SuppressLint("RtlHardcoded")
     fun copyToClipboard(copyText: String?) {
+        val email= getString(R.string.main_mail)
         val sdk = Build.VERSION.SDK_INT
         if (sdk < Build.VERSION_CODES.HONEYCOMB) {
             val clipboard = getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
@@ -59,7 +60,7 @@ class PrepareActivity : AppCompatActivity() {
             clipboard.setPrimaryClip(clip)
         }
         val toast = Toast.makeText(applicationContext,
-                "E-mail скопирован в буфер обмена", Toast.LENGTH_SHORT)
+                email, Toast.LENGTH_SHORT)
         toast.setGravity(Gravity.BOTTOM or Gravity.RIGHT, 50, 50)
         toast.show()
     }

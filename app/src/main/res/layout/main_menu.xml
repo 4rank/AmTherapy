@@ -164,4 +164,25 @@
         app:layout_constraintVertical_bias="0.531"
         tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:id="@+id/mainMenu_text5"
+        style="@style/MyTextStyle_res_wei"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="310dp"
+        android:background="@color/nat1"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/menu_text5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531"
+        tools:ignore="MissingConstraints" />
+
 </RelativeLayout>

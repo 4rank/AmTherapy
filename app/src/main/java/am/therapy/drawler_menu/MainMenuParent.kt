@@ -2,7 +2,8 @@ package am.therapy.drawler_menu
 
 import am.therapy.R
 import am.therapy.dbhelper.ConvertDozeActivity
-import am.therapy.icd.MainICD10
+import am.therapy.icd.icd10.MainICD10
+import am.therapy.icd.icd11.MainICD11
 import android.annotation.SuppressLint
 import android.app.ActivityOptions
 import android.content.DialogInterface
@@ -41,7 +42,9 @@ open class MainMenuParent : AppCompatActivity() {
         val text2 = findViewById<TextView>(R.id.mainMenu_text2)
         val text3 = findViewById<TextView>(R.id.mainMenu_text3)
         val text4 = findViewById<TextView>(R.id.mainMenu_text4)
-//        val text5 = findViewById<TextView>(R.id.mainMenu_text5)
+        val text5 = findViewById<TextView>(R.id.mainMenu_text5)
+        val ad1 = getString(R.string.drawler_menu1)
+        val ad2 = getString(R.string.drawler_menu2)
         text0.setOnClickListener { v: View ->
             v.startAnimation(buttonClick)
             val uriIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.amtherapy"))
@@ -59,20 +62,20 @@ open class MainMenuParent : AppCompatActivity() {
         }
         text2.setOnClickListener { v: View ->
             v.startAnimation(buttonClick)
-            intentInfo(getString(R.string.menu_info_doctor), "Дополнительня информация для врача")
+            intentInfo(getString(R.string.menu_info_doctor), ad1)
         }
         text3.setOnClickListener { v: View ->
             v.startAnimation(buttonClick)
-            intentInfo(getString(R.string.menu_info_parent), "Дополнительная информация для родителей")
+            intentInfo(getString(R.string.menu_info_parent), ad2)
         }
         text4.setOnClickListener { v: View ->
             v.startAnimation(buttonClick)
             intent(MainICD10::class.java)
         }
-//        text5.setOnClickListener { v: View ->
-//            v.startAnimation(buttonClick)
-//            intent(MainICD11::class.java)
-//        }
+        text5.setOnClickListener { v: View ->
+            v.startAnimation(buttonClick)
+            intent(MainICD11::class.java)
+        }
     }
 
     open fun intent(activity: Class<*>?) {
@@ -88,18 +91,21 @@ open class MainMenuParent : AppCompatActivity() {
 
     @SuppressLint("WrongConstant")
     fun alertMessage() {
+        val ad1 = getString(R.string.drawler_menu3)
+        val ad2 = getString(R.string.drawler_menu4)
+        val ad3 = getString(R.string.drawler_menu5)
         alertDialog = AlertDialog.Builder(this).create()
-        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#DF0101'>ВНИМАНИЕ!</font>", 9))
+        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#DF0101'>$ad1</font>", 9))
         alertDialog!!.setIcon(R.drawable.attention)
         alertDialog!!.setMessage(getString(R.string.alert_ab_doze))
-        alertDialog!!.setButton(AlertDialog.BUTTON_POSITIVE, "Далее") { _: DialogInterface?, _: Int ->
+        alertDialog!!.setButton(AlertDialog.BUTTON_POSITIVE, ad2) { _: DialogInterface?, _: Int ->
             val settings = getPreferences(MODE_PRIVATE)
             val ed = settings.edit()
             ed.putString(savedPref, "1")
             ed.apply()
             intent(ConvertDozeActivity::class.java)
         }
-        alertDialog!!.setButton(AlertDialog.BUTTON_NEGATIVE, "Отмена") { _: DialogInterface?, _: Int -> alertDialog!!.cancel() }
+        alertDialog!!.setButton(AlertDialog.BUTTON_NEGATIVE, ad3) { _: DialogInterface?, _: Int -> alertDialog!!.cancel() }
         alertDialog!!.show()
     }
 }

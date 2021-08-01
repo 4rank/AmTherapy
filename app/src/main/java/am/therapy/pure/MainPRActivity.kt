@@ -57,17 +57,17 @@ class MainPRActivity : AppCompatActivity() {
         can3.setOnClickListener { closeET() }
         can4.setOnClickListener { closeET() }
         at.setOnClickListener { alertDialog!!.show() }
+        val ad = getString(R.string.alert_dose)
+        val adm = getString(R.string.pr_alert1)
+        val ab1 = getText(R.string.pr_alert2)
+        val ab2 = getText(R.string.pr_alert3)
         alertDialog = AlertDialog.Builder(this).create()
-        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#FDD910'>Дозировки препаратов</font>", 5))
-        alertDialog!!.setMessage("""Терапевтические дозировки жаропонижающих препаратов:
+        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#FDD910'>$ad</font>", 5))
+        alertDialog!!.setMessage("""$adm
 
-•Paracetamolum:
- min = 10 мг/кг
- max = 15 мг/кг
+$ab1
 
-•Ibuprophenum:
- min = 5 мг/кг
- max = 10 мг/кг
+$ab2
 """)
         alertDialog!!.setButton(AlertDialog.BUTTON_POSITIVE, "OK") { _: DialogInterface?, _: Int -> alertDialog!!.cancel() }
         vVod.setOnKeyListener { _: View?, keyCode: Int, event: KeyEvent ->

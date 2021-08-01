@@ -63,32 +63,39 @@ class MealActivity : AppCompatActivity() {
         val mw10 = findViewById<TextView>(R.id.vm10)
         val mw11 = findViewById<TextView>(R.id.vm11)
         val mw12 = findViewById<TextView>(R.id.vm12)
-        mw0.text = """Суточный объем: $m0 мл.
-            |Разовый объем: по $m0rd мл. 8 раз в день""".trimMargin()
-        mw1.text = """Суточный объем: $m1 мл.
-            |Разовый объем: по $m1rd мл. 8 раз в день""".trimMargin()
-        mw2.text = """Суточный объем: $m2 мл.
-            |Разовый объем: по $m2rd мл. 7 раз в день""".trimMargin()
-        mw3.text = """Суточный объем: $m3 мл.
-            |Разовый объем: по $m3rd мл. 7 раз в день""".trimMargin()
-        mw4.text = """Суточный объем: $m4 мл.
-            |Разовый объем: по $m4rd мл. 6 раз в день""".trimMargin()
-        mw5.text = """Суточный объем: $m5 мл.
-            |Разовый объем: по $m5rd мл. 6 раз в день""".trimMargin()
-        mw6.text = """Суточный объем: $m6 мл.
-            |Разовый объем: по $m6rd мл. 6 раз в день""".trimMargin()
-        mw7.text = """Суточный объем: $m7 мл.
-            |Разовый объем: по $m7rd мл. 6 раз в день""".trimMargin()
-        mw8.text = """Суточный объем: $m8 мл.
-            |Разовый объем: по $m8rd мл. 5 раз в день""".trimMargin()
-        mw9.text = """Суточный объем: $m9 мл.
-            |Разовый объем: по $m9rd мл. 5 раз в день""".trimMargin()
-        mw10.text = """Суточный объем: $m10 мл.
-            |Разовый объем: по $m10rd мл. 5 раз в день""".trimMargin()
-        mw11.text = """Суточный объем: $m11 мл.
-            |Разовый объем: по $m11rd мл. 5 раз в день""".trimMargin()
-        mw12.text = """Суточный объем: $m12 мл.
-            |Разовый объем: по $m12rd мл. 5 раз в день""".trimMargin()
+        val day = getString(R.string.meal_day)
+        val raz = getString(R.string.meal_raz)
+        val ml = getString(R.string.pr_end_ml)
+        val rd8 = getString(R.string.meal_rd8)
+        val rd7 = getString(R.string.meal_rd7)
+        val rd6 = getString(R.string.meal_rd6)
+        val rd5 = getString(R.string.meal_rd5)
+        mw0.text = """$day $m0 $ml
+            |$raz $m0rd $rd8""".trimMargin()
+        mw1.text = """$day $m1 $ml
+            |$raz $m1rd $rd8""".trimMargin()
+        mw2.text = """$day $m2 $ml
+            |$raz $m2rd $rd7""".trimMargin()
+        mw3.text = """$day $m3 $ml
+            |$raz $m3rd $rd7""".trimMargin()
+        mw4.text = """$day $m4 $ml
+            |$raz $m4rd $rd6""".trimMargin()
+        mw5.text = """$day $m5 $ml
+            |$raz $m5rd $rd6""".trimMargin()
+        mw6.text = """$day $m6 $ml
+            |$raz $m6rd $rd6""".trimMargin()
+        mw7.text = """$day $m7 $ml
+            |$raz $m7rd $rd6""".trimMargin()
+        mw8.text = """$day $m8 $ml
+            |$raz $m8rd $rd5""".trimMargin()
+        mw9.text = """$day: $m9 $ml
+            |$raz $m9rd $rd5""".trimMargin()
+        mw10.text = """$day $m10 $ml
+            |$raz $m10rd $rd5""".trimMargin()
+        mw11.text = """$day $m11 $ml
+            |$raz $m11rd $rd5""".trimMargin()
+        mw12.text = """$day $m12 $ml
+            |$raz $m12rd $rd5""".trimMargin()
         val exit = findViewById<Button>(R.id.button_meal_exit)
         exit.setOnClickListener {
             val intent = Intent(this, WeightActivity::class.java)

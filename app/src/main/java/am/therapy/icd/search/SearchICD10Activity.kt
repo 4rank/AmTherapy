@@ -1,7 +1,7 @@
 package am.therapy.icd.search
 
 import am.therapy.R
-import am.therapy.icd.MainICD10
+import am.therapy.icd.icd10.MainICD10
 import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
@@ -33,6 +33,7 @@ class SearchICD10Activity : AppCompatActivity() {
         searchView.setIconifiedByDefault(false)
         lv = findViewById(R.id.lv)
         val list = resources.getStringArray(R.array.search_icd10)
+        val ad = getString(R.string.icd10_al_search)
         adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, list)
         lv.adapter = adapter
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
@@ -40,7 +41,7 @@ class SearchICD10Activity : AppCompatActivity() {
                 if (list.contains(query)) {
                     adapter.filter.filter(query)
                 } else {
-                    Toast.makeText(this@SearchICD10Activity, "Результат поиска соответсвующий вашему запросу", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@SearchICD10Activity, ad, Toast.LENGTH_SHORT).show()
                 }
                 return false
             }

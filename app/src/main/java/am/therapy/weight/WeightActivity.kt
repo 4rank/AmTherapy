@@ -55,16 +55,11 @@ class WeightActivity : AppCompatActivity() {
         can2.setOnClickListener { closeET() }
         can3.setOnClickListener { closeET() }
         at.setOnClickListener { alertDialog!!.show() }
+        val ad = getString(R.string.weight_main)
+        val adm = getText(R.string.weight_text)
         alertDialog = AlertDialog.Builder(this).create()
-        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#8C0623'>Долженствующая масса тела / объем кормления</font>",6))
-        alertDialog!!.setMessage("""Должествующая масса тела по месяцам рассчитывается на основании массы тела ребенка при рождении, в зависимости от степени маловесности (если таковая имеется) новорожденного ребенка.
-Границы изменений расчетов по массе тела новорожденного: 2500г, 2000г, 1500г, 1000г
-Суточный объем кормления рассчитывается по долженствующей массе тела(МТ):
-0-2 мес = 1/5 МТ
- 3-4 мес = 1/6 МТ
- 5-6 мес = 1/7 МТ
- 7-8 мес = 1/8 МТ
- 9-12 мес = 1/9 МТ""")
+        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#8C0623'>$ad</font>",6))
+        alertDialog!!.setMessage(adm)
         alertDialog!!.setButton(AlertDialog.BUTTON_POSITIVE, "OK") { _: DialogInterface?, _: Int -> alertDialog!!.cancel() }
         vVod.setOnKeyListener { _: View?, keyCode: Int, event: KeyEvent ->
             if (event.action == KeyEvent.ACTION_DOWN &&

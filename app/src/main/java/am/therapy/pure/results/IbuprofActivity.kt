@@ -40,11 +40,19 @@ class IbuprofActivity : AppCompatActivity() {
         val sus200 = findViewById<TextView>(R.id.text_ib_sus_200)
         val t200 = findViewById<TextView>(R.id.text_ib_tab_200)
         val t400 = findViewById<TextView>(R.id.text_ib_tab_400)
-        sup60.text = "Разово ректально от $ibSP60min супп. до $ibSP60max супп."
-        sus100.text = "Разово внутрь от " + ibS100min + "мл. до " + ibS100max + "мл."
-        sus200.text = "Разово внутрь от " + ibS200min + "мл. до " + ibS200max + "мл."
-        t200.text = "Разово внутрь от $ibT200min таб. до $ibT200max таб."
-        t400.text = "Разово внутрь от $ibT400min таб. до $ibT400max таб."
+        val sup = getString(R.string.pr_start_rec)
+        val vn = getString(R.string.pr_start_vn)
+        val sup1 = getString(R.string.pr_sup)
+        val ml1 = getString(R.string.pr_ml)
+        val tab1 = getString(R.string.pr_tab)
+        val sup2 = getString(R.string.pr_end_sup)
+        val ml2 = getString(R.string.pr_end_ml)
+        val tab2 = getString(R.string.pr_end_tab)
+        sup60.text = "$sup $ibSP60min $sup1 $ibSP60max $sup2"
+        sus100.text = "$vn $ibS100min $ml1 $ibS100max $ml2"
+        sus200.text = "$vn $ibS200min $ml1 $ibS200max $ml2"
+        t200.text = "$vn $ibT200min $tab1 $ibT200max $tab2"
+        t400.text = "$vn $ibT400min $tab1 $ibT400max $tab2"
         val main = findViewById<Button>(R.id.button_else_ib)
         main.setOnClickListener {
             val intent = Intent(this, MainPRActivity::class.java)

@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/icd10_fragment_container"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/nat1"
@@ -12,6 +12,28 @@
     android:layout_gravity="center"
     android:fitsSystemWindows="true"
     android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adview_icd10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_id"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,7 +70,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/main_fragment"
-        android:name="am.therapy.icd.ICD10FragmentFirst"
+        android:name="am.therapy.icd.icd10.ICD10FragmentFirst"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

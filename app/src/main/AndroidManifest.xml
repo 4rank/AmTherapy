@@ -187,22 +187,42 @@
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
-        <activity android:name=".icd.MainICD10"
+        <activity android:name=".icd.icd10.MainICD10"
             android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
-        <activity android:name=".icd.ICD10"
+        <activity android:name=".icd.icd10.ICD10"
             android:label="@string/back_menu_icd"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
-        <activity android:name=".icd.ICD10Second"
+        <activity android:name=".icd.icd10.ICD10Second"
             android:label="@string/back_menu_icd"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.search.SearchICD10Activity"
+            android:label="@string/back_menu_icd"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".icd.icd11.MainICD11"
+            android:label="@string/back_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".icd.icd11.ICD11"
+            android:label="@string/back_menu_icd"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".icd.icd11.ICD11Second"
+            android:label="@string/back_menu_icd"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".icd.search.SearchICD11Activity"
             android:label="@string/back_menu_icd"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">

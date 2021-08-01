@@ -127,6 +127,7 @@ class ConvertDozeActivity : AppCompatActivity() {
         }
         cursor!!.close()
         dbHelper!!.close()
+        val ad = getString(R.string.alert_convert)
         amoxiTer.setText(standartAmoxiTer)
         amoxiMax.setText(standartAmoxiMax)
         claryTer.setText(standartClaryTer)
@@ -142,7 +143,7 @@ class ConvertDozeActivity : AppCompatActivity() {
         amoxiClavTer.setText(standartAmoxiclavTer)
         amoxiClavMax.setText(standartAmoxiclavMax)
         alertDialog = AlertDialog.Builder(this).create()
-        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#0489B1'>Изменение дозировок</font>",8))
+        alertDialog!!.setTitle(HtmlCompat.fromHtml("<font color='#0489B1'>$ad</font>",8))
         alertDialog!!.setMessage(getString(R.string.alert_convert_doze_ab))
         alertDialog!!.setButton(AlertDialog.BUTTON_POSITIVE, "OK") { _: DialogInterface?, _: Int -> alertDialog!!.cancel() }
     }
@@ -192,6 +193,9 @@ class ConvertDozeActivity : AppCompatActivity() {
         contentValues.put(DBHelper.DOZE_MAX_CEFIXIME, maxCefixime)
         contentValues.put(DBHelper.DOZE_TER_AMOXICLAV, terAmoxiClav)
         contentValues.put(DBHelper.DOZE_MAX_AMOXICLAV, maxAmoxiClav)
+        val alert1 = getText(R.string.alert_convert1)
+        val alert2 = getText(R.string.alert_convert2)
+        val alert3 = getText(R.string.alert_convert3)
         if (TextUtils.isEmpty(amoxiTer.text.toString()) or
                 TextUtils.isEmpty(amoxiMax.text.toString()) or
                 TextUtils.isEmpty(claryTer.text.toString()) or
@@ -206,7 +210,7 @@ class ConvertDozeActivity : AppCompatActivity() {
                 TextUtils.isEmpty(cefiximeMax.text.toString()) or
                 TextUtils.isEmpty(amoxiClavTer.text.toString()) or
                 TextUtils.isEmpty(amoxiClavMax.text.toString())) {
-            setToast("Внимание!\n Не все поля дозировок заполнены!")
+            setToast("$alert1")
             return
         }
         if ((amoxiTer.text.toString().toInt() == 0) or (
@@ -223,20 +227,21 @@ class ConvertDozeActivity : AppCompatActivity() {
                         cefiximeMax.text.toString().toInt() == 0) or (
                         amoxiClavTer.text.toString().toInt() == 0) or (
                         amoxiClavMax.text.toString().toInt() == 0)) {
-            setToast("Внимание!\n Имеются дозировки с нулевым значением!")
+            setToast("$alert2")
             return
         }
         database.insert(DBHelper.TABLE_CONTACTS, null, contentValues)
-        setToast("Значения дозировок изменены")
+        setToast("$alert3")
         val intent = Intent(this, ConvertDozeActivity::class.java)
         startActivity(intent)
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
     }
 
     private fun deleteDoze() {
+        val alert4 = getText(R.string.alert_convert4)
         val database = dbHelper!!.writableDatabase
         database.delete(DBHelper.TABLE_CONTACTS, null, null)
-        setToast("Вы вернули стандартные значения дозировок")
+        setToast("$alert4")
         val intent = Intent(this, ConvertDozeActivity::class.java)
         startActivity(intent)
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)

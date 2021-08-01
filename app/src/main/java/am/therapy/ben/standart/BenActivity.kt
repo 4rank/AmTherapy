@@ -54,25 +54,35 @@ class BenActivity : AppCompatActivity() {
         rGFp = findViewById(R.id.radioGroup_FP)
         button.setOnClickListener { start() }
         cancel.setOnClickListener { clearRadio() }
+        val boy = getString(R.string.sex_name_boy)
+        val girl = getString(R.string.sex_name_girl)
+        val childName = getString(R.string.sex_name)
+        val text1 = getString(R.string.ben_second1)
+        val text2 = getString(R.string.ben_second6)
+        val text3 = getString(R.string.ben_second4)
+        val text4 = getString(R.string.ben_kg)
         val args = intent.extras
-        var sexName = "Ребенок"
+        var sexName = childName
         val sex = args!!["sex"] as Int
         if (sex == R.id.radio_boy) {
-            sexName = "Мальчик"
+            sexName = boy
         }
         if (sex == R.id.radio_girl) {
-            sexName = "Девочка"
+            sexName = girl
         }
         val year = args["year"] as Int
         val month = args["month"] as Int
         val day = args["day"] as Int
         val weight = args["weight_ben"] as Double
-        name.text = "Укажите необходимые поправочные коэфициенты для ребенка:\n$sexName $day.$month.$year г.р.\nс массой тела: $weight кг."
+        name.text = "$text1\n$sexName $day.$month.$year $text2\n$text3 $weight $text4"
     }
 
     fun start() {
         val args = intent.extras
-        var sexName = "Ребенок"
+        val boy = getString(R.string.sex_name_boy)
+        val girl = getString(R.string.sex_name_girl)
+        val childName = getString(R.string.sex_name)
+        var sexName = childName
         val year = args!!["year"] as Int
         val month = args["month"] as Int
         val day = args["day"] as Int
@@ -80,10 +90,10 @@ class BenActivity : AppCompatActivity() {
         val days = args["age"] as Int
         val sex = args["sex"] as Int
         if (sex == R.id.radio_boy) {
-            sexName = "Мальчик"
+            sexName = boy
         }
         if (sex == R.id.radio_girl) {
-            sexName = "Девочка"
+            sexName = girl
         }
         val checked = rGFa!!.checkedRadioButtonId
         val checked1 = rGFz!!.checkedRadioButtonId
@@ -109,6 +119,7 @@ class BenActivity : AppCompatActivity() {
     }
 
     private fun clearRadio() {
+        val del = getString(R.string.rg_delete)
         rGFa!!.clearCheck()
         rGFz!!.clearCheck()
         rGFr!!.clearCheck()
@@ -116,7 +127,7 @@ class BenActivity : AppCompatActivity() {
         rGDmt!!.clearCheck()
         rGFp!!.clearCheck()
         val toast = Toast.makeText(applicationContext,
-                "Все отметки убраны", Toast.LENGTH_SHORT)
+                del, Toast.LENGTH_SHORT)
         toast.setGravity(Gravity.BOTTOM or Gravity.CENTER, 0, 50)
         toast.show()
     }

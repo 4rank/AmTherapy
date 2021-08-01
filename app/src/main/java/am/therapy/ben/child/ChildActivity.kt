@@ -54,31 +54,42 @@ class ChildActivity : AppCompatActivity() {
         rGFp = findViewById(R.id.radioGroup_FP_child)
         button.setOnClickListener { start() }
         cancel.setOnClickListener { clearRadio() }
+        val boy = getString(R.string.sex_name_boy)
+        val girl = getString(R.string.sex_name_girl)
+        val childName = getString(R.string.sex_name)
+        val text1 = getString(R.string.ben_second1)
+        val text2 = getString(R.string.ben_second2)
+        val text3 = getString(R.string.ben_second3)
+        val text4 = getString(R.string.ben_second4)
+        val text5 = getString(R.string.ben_second5)
         val args = intent.extras
-        var sexName = "Ребенок"
+        var sexName = childName
         val sex = args!!["sex_child"] as Int
         if (sex == R.id.radio_child_boy) {
-            sexName = "Мальчик"
+            sexName = boy
         }
         if (sex == R.id.radio_child_girl) {
-            sexName = "Девочка"
+            sexName = girl
         }
         val month = args["age_child"] as Int
         val weight = args["weight_child"] as Int
-        name.text = "Укажите необходимые поправочные коэфициенты для ребенка:\n$sexName , возраст - $month мес.\nс массой тела: $weight г."
+        name.text = "$text1\n$sexName $text2 $month $text3\n$text4 $weight $text5"
     }
 
     fun start() {
         val args = intent.extras
-        var sexName = "Ребенок"
+        val boy = getString(R.string.sex_name_boy)
+        val girl = getString(R.string.sex_name_girl)
+        val name = getString(R.string.sex_name)
+        var sexName = name
         val month = args!!["age_child"] as Int
         val weight = args["weight_child"] as Int
         val sex = args["sex_child"] as Int
         if (sex == R.id.radio_child_boy) {
-            sexName = "Мальчик"
+            sexName = boy
         }
         if (sex == R.id.radio_child_girl) {
-            sexName = "Девочка"
+            sexName = girl
         }
         val checked = rGFa!!.checkedRadioButtonId
         val checked1 = rGFz!!.checkedRadioButtonId
@@ -101,6 +112,7 @@ class ChildActivity : AppCompatActivity() {
     }
 
     private fun clearRadio() {
+        val del = getString(R.string.rg_delete)
         rGFa!!.clearCheck()
         rGFz!!.clearCheck()
         rGFr!!.clearCheck()
@@ -108,7 +120,7 @@ class ChildActivity : AppCompatActivity() {
         rGDmt!!.clearCheck()
         rGFp!!.clearCheck()
         val toast = Toast.makeText(applicationContext,
-                "Все отметки убраны", Toast.LENGTH_SHORT)
+                del, Toast.LENGTH_SHORT)
         toast.setGravity(Gravity.BOTTOM or Gravity.CENTER, 0, 50)
         toast.show()
     }

@@ -2,7 +2,6 @@ package am.therapy.antibiotics.results
 
 import am.therapy.MainActivity
 import am.therapy.R
-import am.therapy.antibiotics.AntiActivity
 import am.therapy.antibiotics.MainAntiActivity
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -33,10 +32,13 @@ class CefurActivity : AppCompatActivity() {
         val s250 = findViewById<TextView>(R.id.text_cefur_250_5)
         val t250 = findViewById<TextView>(R.id.text_cefur_250)
         val t500 = findViewById<TextView>(R.id.text_cefur_500)
-        s125.text = "По " + cefurS125 + "мл. 2 раза в день"
-        s250.text = "По " + cefurS250 + "мл. 2 раза в день"
-        t250.text = "По $cefurT250rd2 таб. 2 раза в день"
-        t500.text = "По $cefurT500rd2 таб. 2 раза в день"
+        val po = getString(R.string.dose_text_start)
+        val ml2rd = getString(R.string.dose_text_2rd_s_else)
+        val t2rd = getString(R.string.dose_text_2rd_t_end_else)
+        s125.text = "$po $cefurS125$ml2rd"
+        s250.text = "$po $cefurS250$ml2rd"
+        t250.text = "$po $cefurT250rd2 $t2rd"
+        t500.text = "$po $cefurT500rd2 $t2rd"
         val main = findViewById<Button>(R.id.button_else_ch_cefur)
         main.setOnClickListener {
             val intent = Intent(this, MainAntiActivity::class.java)
