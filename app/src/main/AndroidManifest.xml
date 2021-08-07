@@ -33,83 +33,66 @@
             </intent-filter>
         </activity>
         <activity android:name=".antibiotics.MainAntiActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity
             android:name=".weight.WeightActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".weight.WeightActivityRes"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".weight.MealActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".pure.results.ParacetActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".pure.results.IbuprofActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".antibiotics.results.AmoxiActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".antibiotics.results.AmoxiClavActivity"
-            android:label="@string/back_menu"
-            android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".antibiotics.AntiActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".pure.MainPRActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".antibiotics.results.CefdinirActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".antibiotics.results.CefiximeActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".antibiotics.results.CefurActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".antibiotics.results.AziActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".antibiotics.results.ClariActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".pure.PRActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
@@ -118,112 +101,94 @@
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".hemolitic.MainGEMActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".hemolitic.GEMActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".hemolitic.results.MaltoferActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".hemolitic.results.TotemaActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".PrepareActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".SupportActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".ben.standart.MainBenActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy_bnv">
         </activity>
         <activity android:name=".ben.standart.BenActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".ben.standart.BenActivityRes"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".ben.child.MainChildActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy_bnv">
         </activity>
         <activity android:name=".ben.child.ChildActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".ben.child.ChildActivityRes"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".drawler_menu.MainMenuInfoActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".dbhelper.ConvertDozeActivity"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.icd10.MainICD10"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.icd10.ICD10"
-            android:label="@string/back_menu_icd"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.icd10.ICD10Second"
-            android:label="@string/back_menu_icd"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.search.SearchICD10Activity"
-            android:label="@string/back_menu_icd"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.icd11.MainICD11"
-            android:label="@string/back_menu"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.icd11.ICD11"
-            android:label="@string/back_menu_icd"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.icd11.ICD11Second"
-            android:label="@string/back_menu_icd"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.search.SearchICD11Activity"
-            android:label="@string/back_menu_icd"
+            android:screenOrientation="portrait"
+            android:theme="@style/ABTherapy">
+        </activity>
+        <activity android:name=".langswap.LangSwapperActivity"
             android:screenOrientation="portrait"
             android:theme="@style/ABTherapy">
         </activity>

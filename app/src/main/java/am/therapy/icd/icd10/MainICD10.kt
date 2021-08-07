@@ -4,7 +4,9 @@ import am.therapy.data.Storage
 import am.therapy.MainActivity
 import am.therapy.R
 import am.therapy.icd.search.SearchICD10Activity
+import am.therapy.langswap.SharedPreference
 import android.content.Intent
+import android.content.res.Configuration
 import android.graphics.Color
 import android.os.Bundle
 import android.view.MenuItem
@@ -15,8 +17,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
+import java.util.*
 
 
+@Suppress("DEPRECATION")
 class MainICD10 : AppCompatActivity() {
 
     private val buttonClick = AlphaAnimation(1f, 0.65f)
@@ -24,6 +28,24 @@ class MainICD10 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val sharedPreference = SharedPreference(this)
+        val lang = sharedPreference.getValueInt("lang")
+        if (lang==1){
+            val locale1 = Locale("en")
+            Locale.setDefault(locale1)
+            val config2 = Configuration()
+            config2.locale = locale1
+            baseContext.resources.updateConfiguration(
+                    config2, baseContext.resources.displayMetrics)
+        }
+        if (lang==2){
+            val locale2 = Locale("ru")
+            Locale.setDefault(locale2)
+            val config2 = Configuration()
+            config2.locale = locale2
+            baseContext.resources.updateConfiguration(
+                    config2, baseContext.resources.displayMetrics)
+        }
         setContentView(R.layout.icd10_main)
 
         mAdView = findViewById(R.id.adview_icd10_main)
@@ -33,6 +55,7 @@ class MainICD10 : AppCompatActivity() {
         val actionBar = supportActionBar
         supportActionBar?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.ac_b_anti))
         actionBar!!.setHomeButtonEnabled(true)
+        actionBar.setTitle(R.string.back_menu)
         actionBar.setDisplayHomeAsUpEnabled(true)
 
         val text1 = findViewById<TextView>(R.id.icd10_title1)

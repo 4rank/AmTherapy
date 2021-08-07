@@ -3,14 +3,17 @@ package am.therapy.antibiotics.results
 import am.therapy.MainActivity
 import am.therapy.R
 import am.therapy.antibiotics.MainAntiActivity
+import am.therapy.data.Storage
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import java.util.*
 
 class AmoxiClavActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
@@ -20,7 +23,8 @@ class AmoxiClavActivity : AppCompatActivity() {
 
         val actionBar = supportActionBar
         supportActionBar?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.ac_b_anti))
-        actionBar!!.setHomeButtonEnabled(true)
+        actionBar!!.setTitle(R.string.back_menu)
+        actionBar.setHomeButtonEnabled(true)
         actionBar.setDisplayHomeAsUpEnabled(true)
 
         val args = intent.extras

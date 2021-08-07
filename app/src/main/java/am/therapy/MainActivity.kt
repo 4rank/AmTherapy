@@ -4,10 +4,12 @@ import am.therapy.antibiotics.MainAntiActivity
 import am.therapy.ben.standart.MainBenActivity
 import am.therapy.drawler_menu.MainMenuParent
 import am.therapy.hemolitic.MainGEMActivity
+import am.therapy.langswap.SharedPreference
 import am.therapy.pure.MainPRActivity
 import am.therapy.weight.WeightActivity
 import android.app.ActivityOptions
 import android.content.Intent
+import android.content.res.Configuration
 import android.graphics.Color
 import android.os.Bundle
 import android.view.MenuItem
@@ -23,6 +25,9 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.gms.ads.MobileAds
 import java.util.*
 
+private var recreate = 0
+
+@Suppress("DEPRECATION")
 class MainActivity : MainMenuParent() {
 
     private val buttonClick = AlphaAnimation(1f, 0.65f)
@@ -32,7 +37,26 @@ class MainActivity : MainMenuParent() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val sharedPreference = SharedPreference(this)
+        val lang = sharedPreference.getValueInt("lang")
+        if (lang == 1) {
+            Locale.ENGLISH
+        }
+        if (lang == 2) {
+            val locale2 = Locale("ru")
+            Locale.setDefault(locale2)
+            val config2 = Configuration()
+            config2.locale = locale2
+            baseContext.resources.updateConfiguration(
+                    config2, baseContext.resources.displayMetrics)
+        }
         setContentView(R.layout.activity_main)
+        if (recreate == 0) {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+            recreate += 1
+        }
 
         MobileAds.initialize(this) {}
         val actionBar = supportActionBar
@@ -104,7 +128,7 @@ class MainActivity : MainMenuParent() {
     }
 
     private fun send() {
-        val send= getString(R.string.main_send)
+        val send = getString(R.string.main_send)
         val sendIntent = Intent()
         sendIntent.action = Intent.ACTION_SEND
         sendIntent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.amtherapy")

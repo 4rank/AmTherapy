@@ -24,6 +24,7 @@ class ICD11Second : AppCompatActivity() {
         val actionBar = supportActionBar
         supportActionBar?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.ac_b_anti))
         actionBar!!.setHomeButtonEnabled(true)
+        actionBar.setTitle(R.string.back_menu_icd)
         actionBar.setDisplayHomeAsUpEnabled(true)
 
         val bundle = intent.extras

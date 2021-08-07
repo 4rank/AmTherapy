@@ -34,6 +34,7 @@ class MainChildActivity : AppCompatActivity() {
         val actionBar = supportActionBar
         supportActionBar?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.ac_b_ben))
         actionBar!!.setHomeButtonEnabled(true)
+        actionBar.setTitle(R.string.back_menu)
         actionBar.setDisplayHomeAsUpEnabled(true)
 
         val ml = findViewById<MotionLayout>(R.id.main_view_ben_child)

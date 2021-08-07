@@ -62,8 +62,9 @@
 
                     <ImageView
                         android:id="@+id/imageButtonLec"
+                        android:background="@drawable/main_image_stroke"
                         android:layout_width="315dp"
-                        android:layout_height="133dp"
+                        android:layout_height="128dp"
                         android:clickable="true"
                         android:contentDescription="@string/todo"
                         android:focusable="true"
@@ -83,8 +84,9 @@
 
                     <ImageView
                         android:id="@+id/imageButtonPR"
+                        android:background="@drawable/main_image_stroke"
                         android:layout_width="315dp"
-                        android:layout_height="133dp"
+                        android:layout_height="128dp"
                         android:clickable="true"
                         android:contentDescription="@string/todo"
                         android:focusable="true"
@@ -104,8 +106,9 @@
 
                     <ImageView
                         android:id="@+id/imageButtonGEM"
+                        android:background="@drawable/main_image_stroke"
                         android:layout_width="315dp"
-                        android:layout_height="133dp"
+                        android:layout_height="128dp"
                         android:clickable="true"
                         android:contentDescription="@string/todo"
                         android:focusable="true"
@@ -125,8 +128,9 @@
 
                     <ImageView
                         android:id="@+id/imageButtonCent"
+                        android:background="@drawable/main_image_stroke"
                         android:layout_width="315dp"
-                        android:layout_height="133dp"
+                        android:layout_height="128dp"
                         android:clickable="true"
                         android:contentDescription="@string/todo"
                         android:focusable="true"
@@ -146,8 +150,9 @@
 
                     <ImageView
                         android:id="@+id/imageButtonBen"
+                        android:background="@drawable/main_image_stroke"
                         android:layout_width="315dp"
-                        android:layout_height="133dp"
+                        android:layout_height="128dp"
                         android:clickable="true"
                         android:contentDescription="@string/todo"
                         android:focusable="true"

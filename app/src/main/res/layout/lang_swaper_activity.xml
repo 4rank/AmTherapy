@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nat1"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textView_swaplang"
+                style="@style/MyTextStyle_title"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:text="@string/swaplang_main"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@color/nat3" />
+
+            <LinearLayout
+                android:id="@+id/ll_swaplang_eng"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@color/nat2"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_langswap_back">
+
+                    <ImageView
+                        android:id="@+id/image_eng"
+                        android:layout_width="32dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentStart="true"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.392"
+                        app:srcCompat="@drawable/set_lang" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/button_swaplang_eng"
+                    style="@style/MyTextStyle_button_attention_pr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:gravity="center"
+                    android:text="@string/swaplang_eng"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.044" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/nat3" />
+
+            <LinearLayout
+                android:id="@+id/ll_swaplang_ru"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@color/nat2"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_langswap_back">
+
+                    <ImageView
+                        android:id="@+id/image_ru"
+                        android:layout_width="32dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentStart="true"
+                        android:contentDescription="@string/todo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.392"
+                        app:srcCompat="@drawable/set_lang" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/button_swaplang_ru"
+                    style="@style/MyTextStyle_button_attention_pr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center"
+                    android:text="@string/swaplang_rus"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.044" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_swaplang_exit"
+                style="@style/MyTextStyle_button_gem_else"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="200dp"
+                android:background="@drawable/custom_but_anti"
+                android:text="@string/botton_convert_cancel"
+                tools:ignore="MissingConstraints,SmallSp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

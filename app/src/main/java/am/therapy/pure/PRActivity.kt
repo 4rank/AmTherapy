@@ -26,6 +26,7 @@ class PRActivity : AppCompatActivity() {
         val actionBar = supportActionBar
         supportActionBar?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.ac_b_pr))
         actionBar!!.setHomeButtonEnabled(true)
+        actionBar.setTitle(R.string.back_menu)
         actionBar.setDisplayHomeAsUpEnabled(true)
 
         mAdView = findViewById(R.id.adview_pr_second)

@@ -35,6 +35,7 @@ class ConvertDozeActivity : AppCompatActivity() {
         val actionBar = supportActionBar
         supportActionBar?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.ac_b_anti))
         actionBar!!.setHomeButtonEnabled(true)
+        actionBar.setTitle(R.string.back_menu)
         actionBar.setDisplayHomeAsUpEnabled(true)
 
         val addDoze = findViewById<Button>(R.id.button_convert_ok)

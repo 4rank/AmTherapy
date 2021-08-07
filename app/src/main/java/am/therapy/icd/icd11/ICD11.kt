@@ -35,6 +35,7 @@ class ICD11 : AppCompatActivity() {
         val actionBar = supportActionBar
         supportActionBar?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.ac_b_anti))
         actionBar!!.setHomeButtonEnabled(true)
+        actionBar.setTitle(R.string.back_menu_icd)
         actionBar.setDisplayHomeAsUpEnabled(true)
         val args = intent.extras
         val id = args!!["id_icd11"] as Int

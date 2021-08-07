@@ -237,6 +237,7 @@
     <string name="menu_text4">Справочник МКБ-10</string>
     <string name="menu_text5">Справочник МКБ-11</string>
     <string name="menu_text0">Проверка обновлений</string>
+    <string name="menu_text6">Язык приложения</string>
     <string name="botton_convert_cancel">Вернуться на главную</string>
     <string name="botton_convert_ok">Изменить дозировки</string>
     <string name="convert_ter_doze">Терапевтическая доза: мг/кг/сут</string>
@@ -245,6 +246,9 @@
     <string name="button_convert_reset">Вернуть стандартные значения</string>
     <string name="fragment_text">Код:</string>
     <string name="icd10_second_main">МКБ-10:</string>
+    <string name="swaplang_main">Выберите язык приложения:</string>
+    <string name="swaplang_rus">Русский</string>
+    <string name="swaplang_eng">English</string>
 
     <string name="dose_text_start">По </string>
     <string name="dose_text_2rd_s">мл. 2р/д либо по </string>
