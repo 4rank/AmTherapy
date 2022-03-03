@@ -35,10 +35,6 @@ class MainAntiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.anti_first)
 
-        mAdView = findViewById(R.id.adview_ab_first)
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
-
         val actionBar = supportActionBar
         supportActionBar?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.ac_b_anti))
         actionBar!!.setHomeButtonEnabled(true)

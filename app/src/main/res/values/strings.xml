@@ -937,8 +937,8 @@ drug instructions (minimum and maximum single dosages, maximum daily dosage), as
     <string name="data_ru_icd10_U00_U49">Временные обозначения новых диагнозов неясной этиологии или для использования в чрезвычайных ситуациях </string>
     <string name="data_ru_icd10_U82_U85">Устойчивость к противомикробным и противоопухолевым препаратам </string>
 
-    <string name="banner_id_fake"> ca-app-pub-3940256099942544/6300978111 </string>
-    <string name="banner_id"> ca-app-pub-7626707613561696/2666299740 </string>
+    <string name="banner_id_fake">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_id">ca-app-pub-7626707613561696/2666299740</string>
     <string-array name="things">
         <item name="hm_1">Whatever you do, do with determination. You have one life to live; do your work with passion and give your best. Whether you want to be a chef, doctor, actor, or a mother, be passionate to get the best result. </item>
         <item name="hm_2">Medicine cure diseases but only doctors can cure patients. </item>

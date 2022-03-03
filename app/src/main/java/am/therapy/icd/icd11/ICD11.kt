@@ -28,10 +28,6 @@ class ICD11 : AppCompatActivity() {
         val text = findViewById<TextView>(R.id.icd11_tv_title)
         val but = findViewById<Button>(R.id.button_attention_icd11)
 
-        mAdView = findViewById(R.id.adview_icd11)
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
-
         val actionBar = supportActionBar
         supportActionBar?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.ac_b_anti))
         actionBar!!.setHomeButtonEnabled(true)

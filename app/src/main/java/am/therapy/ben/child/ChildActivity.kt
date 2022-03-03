@@ -38,9 +38,6 @@ class ChildActivity : AppCompatActivity() {
         actionBar.setTitle(R.string.back_menu)
         actionBar.setDisplayHomeAsUpEnabled(true)
 
-        mAdView = findViewById(R.id.adview_ben_child)
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
 
         val ml = findViewById<MotionLayout>(R.id.child_view)
         ml.transitionToStart()

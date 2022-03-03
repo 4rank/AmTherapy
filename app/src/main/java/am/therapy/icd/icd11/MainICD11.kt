@@ -26,10 +26,6 @@ class MainICD11 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.icd11_main)
 
-        mAdView = findViewById(R.id.adview_icd11_main)
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
-
         val actionBar = supportActionBar
         supportActionBar?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.ac_b_anti))
         actionBar!!.setHomeButtonEnabled(true)

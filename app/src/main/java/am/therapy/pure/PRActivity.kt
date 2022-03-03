@@ -29,10 +29,6 @@ class PRActivity : AppCompatActivity() {
         actionBar.setTitle(R.string.back_menu)
         actionBar.setDisplayHomeAsUpEnabled(true)
 
-        mAdView = findViewById(R.id.adview_pr_second)
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
-
         val ml = findViewById<MotionLayout>(R.id.choose_view_pr)
         ml.transitionToStart()
         val par = findViewById<Button>(R.id.button_paracetamoli)

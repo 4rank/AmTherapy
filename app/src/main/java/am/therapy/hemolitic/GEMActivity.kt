@@ -29,10 +29,6 @@ class GEMActivity : AppCompatActivity() {
         actionBar.setTitle(R.string.back_menu)
         actionBar.setDisplayHomeAsUpEnabled(true)
 
-        mAdView = findViewById(R.id.adview_gem_second)
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
-
         val ml = findViewById<MotionLayout>(R.id.choose_view_gem)
         ml.transitionToStart()
         val mal = findViewById<Button>(R.id.button_maltofer)

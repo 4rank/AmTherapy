@@ -39,10 +39,6 @@ class WeightActivity : AppCompatActivity() {
         actionBar.setTitle(R.string.back_menu)
         actionBar.setDisplayHomeAsUpEnabled(true)
 
-        mAdView = findViewById(R.id.adview_weight)
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
-
         val ml = findViewById<MotionLayout>(R.id.main_view_weight)
         ml.transitionToStart()
         val vVod = findViewById<EditText>(R.id.vVod_weight)

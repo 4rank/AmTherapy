@@ -38,10 +38,6 @@ class BenActivity : AppCompatActivity() {
         actionBar.setTitle(R.string.back_menu)
         actionBar.setDisplayHomeAsUpEnabled(true)
 
-        mAdView = findViewById(R.id.adview_ben)
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
-
         val ml = findViewById<MotionLayout>(R.id.ben_view)
         ml.transitionToStart()
         val button = findViewById<Button>(R.id.button_ben_second)

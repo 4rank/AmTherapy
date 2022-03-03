@@ -39,10 +39,6 @@ class MainPRActivity : AppCompatActivity() {
         actionBar.setTitle(R.string.back_menu)
         actionBar.setDisplayHomeAsUpEnabled(true)
 
-        mAdView = findViewById(R.id.adview_pr_first)
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
-
         val ml = findViewById<MotionLayout>(R.id.main_view_pr)
         ml.transitionToStart()
         val vVod = findViewById<EditText>(R.id.vVodWeight_pr)

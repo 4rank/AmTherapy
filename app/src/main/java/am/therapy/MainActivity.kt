@@ -25,8 +25,6 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.gms.ads.MobileAds
 import java.util.*
 
-private var recreate = 0
-
 @Suppress("DEPRECATION")
 class MainActivity : MainMenuParent() {
 
@@ -37,6 +35,9 @@ class MainActivity : MainMenuParent() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        MobileAds.initialize(this) {}
+        setContentView(R.layout.activity_main)
+
         val sharedPreference = SharedPreference(this)
         val lang = sharedPreference.getValueInt("lang")
         if (lang == 1) {
@@ -50,15 +51,7 @@ class MainActivity : MainMenuParent() {
             baseContext.resources.updateConfiguration(
                     config2, baseContext.resources.displayMetrics)
         }
-        setContentView(R.layout.activity_main)
-        if (recreate == 0) {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
-            recreate += 1
-        }
 
-        MobileAds.initialize(this) {}
         val actionBar = supportActionBar
         supportActionBar?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.ac_b_anti))
         actionBar!!.setHomeButtonEnabled(true)

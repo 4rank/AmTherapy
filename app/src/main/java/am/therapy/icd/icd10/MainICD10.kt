@@ -15,7 +15,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import java.util.*
 
@@ -47,10 +46,6 @@ class MainICD10 : AppCompatActivity() {
                     config2, baseContext.resources.displayMetrics)
         }
         setContentView(R.layout.icd10_main)
-
-        mAdView = findViewById(R.id.adview_icd10_main)
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
 
         val actionBar = supportActionBar
         supportActionBar?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.ac_b_anti))
