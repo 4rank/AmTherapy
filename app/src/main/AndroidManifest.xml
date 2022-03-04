@@ -12,12 +12,14 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/Theme.AppCompat.Light"
-        tools:ignore="ExtraText">
+        tools:ignore="ExtraText"
+        android:fullBackupContent="">
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-7626707613561696~5176859119"/>
         <activity android:name=".SplashActivity"
-            android:screenOrientation="portrait"
+            android:exported="false"
+            android:screenOrientation="fullSensor"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,171 +27,172 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"
+            android:exported="true"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy_main">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
             </intent-filter>
         </activity>
         <activity android:name=".antibiotics.MainAntiActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity
             android:name=".weight.WeightActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".weight.WeightActivityRes"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".weight.MealActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".pure.results.ParacetActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".pure.results.IbuprofActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".antibiotics.results.AmoxiActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".antibiotics.results.AmoxiClavActivity"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".antibiotics.AntiActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".pure.MainPRActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".antibiotics.results.CefdinirActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".antibiotics.results.CefiximeActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".antibiotics.results.CefurActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".antibiotics.results.AziActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".antibiotics.results.ClariActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".pure.PRActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".ThingsActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".hemolitic.MainGEMActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".hemolitic.GEMActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".hemolitic.results.MaltoferActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".hemolitic.results.TotemaActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".PrepareActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".SupportActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".ben.standart.MainBenActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy_bnv">
         </activity>
         <activity android:name=".ben.standart.BenActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".ben.standart.BenActivityRes"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".ben.child.MainChildActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy_bnv">
         </activity>
         <activity android:name=".ben.child.ChildActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".ben.child.ChildActivityRes"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".drawler_menu.MainMenuInfoActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".dbhelper.ConvertDozeActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.icd10.MainICD10"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.icd10.ICD10"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.icd10.ICD10Second"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.search.SearchICD10Activity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.icd11.MainICD11"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.icd11.ICD11"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.icd11.ICD11Second"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".icd.search.SearchICD11Activity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
         <activity android:name=".langswap.LangSwapperActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/ABTherapy">
         </activity>
     </application>
